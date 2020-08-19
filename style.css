@@ -4,3 +4,181 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#by a {
+    text-decoration: none;
+    color: orangered;
+}
+
+.footer {
+    position: absolute;
+    background-color: transparent;
+}
+
+#copy {
+    color: orangered;
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+#by {
+    color: orangered;
+    position: absolute;
+    background-color: transparent;
+    letter-spacing: 0;
+}
+
+i {
+    background: transparent;
+}
+
+#fb {
+    position: absolute;
+    color: orangered;
+}
+
+#git {
+    position: absolute;
+    color: orangered;
+}
+
+#twitter {
+    position: absolute;
+    color: orangered;
+}
+
+#insta {
+    position: absolute;
+    color: orangered;
+}
+
+#link {
+    position: absolute;
+    color: orangered;
+}
+
+#fb:hover {
+    color: #1877f2;
+}
+
+#git:hover {
+    color: #6e5494;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#link:hover {
+    color: #007bb5;
+}
+
+#insta:hover {
+    color: #c32aa3;
+}
+
+
+@media only screen and (max-width: 600px) {
+.footer {
+    top: 710px;
+    height: 15px;
+    width: 100vw;
+}
+#copy {
+    font-size: xx-small;
+    top: 15%;
+    left: 43%;
+}
+#by {
+    font-size: 6px;
+    top: 10%;
+    left: 10px;
+}
+#fb {
+    font-size: 15px;
+    margin-right: 50px;
+    right: 50px;
+    
+}
+#git {
+    font-size: 15px;
+    top: 0%;
+    margin-right: 40px;
+    right: 40px;
+}
+#twitter {
+    font-size: 15px;
+    top: 0%;
+    margin-right: 30px;
+    right: 30px;
+}
+#insta {
+    font-size: 15px;
+    top: 0%;
+    margin-right: 20px;
+    right: 20px;
+}
+#link {
+    font-size: 15px;
+    top: 0%;
+    margin-right: 10px;
+    right: 10px;
+}
+}
+
+@media only screen and (min-width: 600px) {
+    .footer {
+        bottom: -300px;
+        margin-bottom: 40px;
+        height: 50px;
+        width: 100vw;
+    }
+    #copy {
+        top: 45%;
+        left: 46.5%;
+    }
+    #by {
+        top: 45%;
+        left: 30px;
+    }
+    #fb {
+        top: 45%;
+        margin-right: 50px;
+        right: 150px;
+    }
+    #git {
+        top: 45%;
+        margin-right: 40px;
+        right: 115px;
+    }
+    #twitter {
+        top: 45%;
+        margin-right: 30px;
+        right: 80px;
+    }
+    #insta {
+        top: 45%;
+        margin-right: 20px;
+        right: 45px;
+    }
+    #link {
+        top: 45%;
+        margin-right: 10px;
+        right: 10px;
+    }
+}
