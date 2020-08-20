@@ -118,24 +118,58 @@ html {
     background-size: cover;
 }
 
-
 a {
     text-decoration: none;
 }
 
 #by a {
     text-decoration: none;
-    color: orangered;
+    color: white;
 }
 
+nav {
+    position: absolute;
+    width: 100vw;
+    height: 15rem;
+    background: black;
+}
 
-h1 {
-    background-color: black;
-    font-family: 'Bungee', cursive;
+ul {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
-    color: red;
+}
+
+ul a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 2.5rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: .2rem .2rem 0 grey;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: 0.1s linear;
+}
+
+ul a:hover {
+    border-bottom: .1rem solid#fff;
+    transform: scale(1.1);
+}
+
+.header {
+    position: relative;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+h1 {
+    font-family: 'Red Rose', cursive;
+    font-size: 6rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: .5rem .5rem 0 grey;
 }
 
 .footer {
@@ -149,7 +183,7 @@ h1 {
 }
 
 #copy {
-    color: orangered;
+    color: white;
     position: absolute;
     background-color: transparent;
     text-align: center;
@@ -160,7 +194,7 @@ h1 {
 }
 
 #by {
-    color: orangered;
+    color: white;
     position: absolute;
     background-color: transparent;
     letter-spacing: 0;
@@ -175,7 +209,7 @@ i {
 
 #fb {
     position: absolute;
-    color: orangered;
+    color: white;
     top: 45%;
     margin-right: 5rem;
     font-size: 3rem;
@@ -184,7 +218,7 @@ i {
 
 #git {
     position: absolute;
-    color: orangered;
+    color: white;
     top: 45%;
     margin-right: 4rem;
     font-size: 3rem;
@@ -193,7 +227,7 @@ i {
 
 #twitter {
     position: absolute;
-    color: orangered;
+    color: white;
     top: 45%;
     margin-right: 3rem;
     font-size: 3rem;
@@ -202,7 +236,7 @@ i {
 
 #insta {
     position: absolute;
-    color: orangered;
+    color: white;
     top: 45%;
     margin-right: 2rem;
     font-size: 3rem;
@@ -211,7 +245,7 @@ i {
 
 #link {
     position: absolute;
-    color: orangered;
+    color: white;
     top: 45%;
     margin-right: 1rem;
     font-size: 3rem;
@@ -224,12 +258,12 @@ i {
 
  ::-webkit-scrollbar-thumb {
     animation: load alternate-reverse 0.1s infinite;
-    background: linear-gradient(orange, orangered);
+    background: linear-gradient(orange, white);
 }
 
  ::-webkit-scrollbar-thumb:hover {
     animation: load alternate-reverse 0.1s infinite;
-    background: linear-gradient(orangered, orange);
+    background: linear-gradient(white, orange);
 }
 
 #fb:hover {
