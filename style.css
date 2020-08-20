@@ -1,18 +1,123 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media(max-width: 2560px) {
+    html {
+        font-size: 65%;
+    }
+    .footer {
+        top: 140rem;
+    }
+    #copy {
+        top: 3rem;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1600px) {
+    html {
+        font-size: 65%;
+    }
+    .footer {
+        top: 140rem;
+    }
+    #copy {
+        top: 3rem;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 65%;
+    }
+    .footer {
+        top: 140rem;
+    }
+    #copy {
+        top: 3rem;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 35%;
+    }
+    .footer {
+        top: 140rem;
+    }
+    #copy {
+        top: 3rem;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media(max-width: 450px) {
+    html {
+        font-size: 29%;
+    }
+    .footer {
+        top: 140rem;
+    }
+    #copy {
+        top: 3rem;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media(max-width: 390px) {
+    html {
+        font-size: 26.5%;
+    }
+    .footer {
+        top: 140rem;
+    }
+    #copy {
+        top: 3rem;
+        display: inline;
+        align-items: center;
+    }
+}
+
+@media(max-width: 320px) {
+    html {
+        font-size: 21%;
+    }
+    .footer {
+        top: 140rem;
+    }
+    #copy {
+        top: 3rem;
+        display: inline;
+        align-items: center;
+    }
 }
 
 .container {
-    position: relative;
+    position: absolute;
     height: 100vh;
     width: 100vw;
-    background-color: black;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: url('images/bg.jpg') no-repeat;
+    background-size: cover;
 }
+
 
 a {
     text-decoration: none;
@@ -24,8 +129,13 @@ a {
 }
 
 .footer {
+    bottom: -30rem;
+    margin-bottom: 4rem;
+    height: 5rem;
+    width: 100vw;
     position: absolute;
     background-color: transparent;
+    overflow: hidden;
 }
 
 #copy {
@@ -34,6 +144,9 @@ a {
     background-color: transparent;
     text-align: center;
     letter-spacing: 0;
+    font-size: 1.5rem;
+    top: 45%;
+    left: 46.5%;
 }
 
 #by {
@@ -41,6 +154,9 @@ a {
     position: absolute;
     background-color: transparent;
     letter-spacing: 0;
+    font-size: 1.5rem;
+    top: 45%;
+    left: 3rem;
 }
 
 i {
@@ -50,26 +166,60 @@ i {
 #fb {
     position: absolute;
     color: orangered;
+    top: 35%;
+    margin-right: 5rem;
+    font-size: 3rem;
+    right: 15rem;
 }
 
 #git {
     position: absolute;
     color: orangered;
+    top: 35%;
+    margin-right: 4rem;
+    font-size: 3rem;
+    right: 11.5rem;
 }
 
 #twitter {
     position: absolute;
     color: orangered;
+    top: 35%;
+    margin-right: 3rem;
+    font-size: 3rem;
+    right: 8rem;
 }
 
 #insta {
     position: absolute;
     color: orangered;
+    top: 35%;
+    margin-right: 2rem;
+    font-size: 3rem;
+    right: 4.5rem;
 }
 
 #link {
     position: absolute;
     color: orangered;
+    top: 35%;
+    margin-right: 1rem;
+    font-size: 3rem;
+    right: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+ ::-webkit-scrollbar-thumb {
+    animation: load alternate-reverse 0.1s infinite;
+    background: linear-gradient(orange, orangered);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    animation: load alternate-reverse 0.1s infinite;
+    background: linear-gradient(orangered, orange);
 }
 
 #fb:hover {
@@ -90,95 +240,4 @@ i {
 
 #insta:hover {
     color: #c32aa3;
-}
-
-
-@media only screen and (max-width: 600px) {
-.footer {
-    top: 710px;
-    height: 15px;
-    width: 100vw;
-}
-#copy {
-    font-size: xx-small;
-    top: 15%;
-    left: 43%;
-}
-#by {
-    font-size: 6px;
-    top: 10%;
-    left: 10px;
-}
-#fb {
-    font-size: 15px;
-    margin-right: 50px;
-    right: 50px;
-    
-}
-#git {
-    font-size: 15px;
-    top: 0%;
-    margin-right: 40px;
-    right: 40px;
-}
-#twitter {
-    font-size: 15px;
-    top: 0%;
-    margin-right: 30px;
-    right: 30px;
-}
-#insta {
-    font-size: 15px;
-    top: 0%;
-    margin-right: 20px;
-    right: 20px;
-}
-#link {
-    font-size: 15px;
-    top: 0%;
-    margin-right: 10px;
-    right: 10px;
-}
-}
-
-@media only screen and (min-width: 600px) {
-    .footer {
-        bottom: -300px;
-        margin-bottom: 40px;
-        height: 50px;
-        width: 100vw;
-    }
-    #copy {
-        top: 45%;
-        left: 46.5%;
-    }
-    #by {
-        top: 45%;
-        left: 30px;
-    }
-    #fb {
-        top: 45%;
-        margin-right: 50px;
-        right: 150px;
-    }
-    #git {
-        top: 45%;
-        margin-right: 40px;
-        right: 115px;
-    }
-    #twitter {
-        top: 45%;
-        margin-right: 30px;
-        right: 80px;
-    }
-    #insta {
-        top: 45%;
-        margin-right: 20px;
-        right: 45px;
-    }
-    #link {
-        top: 45%;
-        margin-right: 10px;
-        right: 10px;
-    }
 }
