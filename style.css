@@ -13,27 +13,11 @@ html {
     html {
         font-size: 65%;
     }
-    .footer {
-        top: 140rem;
-    }
-    #copy {
-        top: 3rem;
-        display: inline;
-        align-items: center;
-    }
 }
 
 @media(max-width: 1600px) {
     html {
         font-size: 65%;
-    }
-    .footer {
-        top: 140rem;
-    }
-    #copy {
-        top: 3rem;
-        display: inline;
-        align-items: center;
     }
 }
 
@@ -41,27 +25,11 @@ html {
     html {
         font-size: 65%;
     }
-    .footer {
-        top: 140rem;
-    }
-    #copy {
-        top: 3rem;
-        display: inline;
-        align-items: center;
-    }
 }
 
 @media(max-width: 768px) {
     html {
         font-size: 35%;
-    }
-    .footer {
-        top: 140rem;
-    }
-    #copy {
-        top: 3rem;
-        display: inline;
-        align-items: center;
     }
 }
 
@@ -69,41 +37,17 @@ html {
     html {
         font-size: 29%;
     }
-    .footer {
-        top: 140rem;
-    }
-    #copy {
-        top: 3rem;
-        display: inline;
-        align-items: center;
-    }
 }
 
 @media(max-width: 390px) {
     html {
         font-size: 26.5%;
     }
-    .footer {
-        top: 140rem;
-    }
-    #copy {
-        top: 3rem;
-        display: inline;
-        align-items: center;
-    }
 }
 
 @media(max-width: 320px) {
     html {
         font-size: 21%;
-    }
-    .footer {
-        top: 140rem;
-    }
-    #copy {
-        top: 3rem;
-        display: inline;
-        align-items: center;
     }
 }
 
