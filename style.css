@@ -15,15 +15,27 @@ html {
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: xx-large;
+        font-size: 6rem;
     }
     .sgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
     .cgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
+    }
+    .one {
+        height: 32rem;
+        width: 32rem;
+        top: 4rem;
+        left: 5.25rem;
+    }
+    .two {
+        height: 32rem;
+        width: 32rem;
+        top: 4rem;
+        right: 5.25rem;
     }
 }
 
@@ -33,27 +45,15 @@ html {
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: xx-large;
+        font-size: 6rem;
     }
     .sgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
     .cgpa {
-        height: 20rem;
-        width: 20rem;
-    }
-    .one {
-        height: 20rem;
-        width: 20rem;
-        top: 10rem;
-        left: 11.25rem;
-    }
-    .two {
-        height: 20rem;
-        width: 20rem;
-        top: 10rem;
-        left: 53.75rem;
+        height: 32rem;
+        width: 32rem;
     }
 }
 
@@ -63,15 +63,15 @@ html {
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: xx-large;
+        font-size: 6rem;
     }
     .sgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
     .cgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
 }
 
@@ -81,51 +81,51 @@ html {
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: xx-large;
+        font-size: 6rem;
     }
     .sgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
     .cgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
 }
 
 @media(max-width: 450px) {
     html {
-        font-size: 29%;
+        font-size: 27%;
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: xx-large;
+        font-size: 5.5rem;
     }
     .sgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
     .cgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
 }
 
 @media(max-width: 390px) {
     html {
-        font-size: 26.5%;
+        font-size: 22.5%;
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: xx-large;
+        font-size: 4.5rem;
     }
     .sgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
     .cgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
 }
 
@@ -135,15 +135,15 @@ html {
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 3rem;
+        font-size: 5rem;
     }
     .sgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
     .cgpa {
-        height: 20rem;
-        width: 20rem;
+        height: 32rem;
+        width: 32rem;
     }
 }
 
