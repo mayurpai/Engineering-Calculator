@@ -96,6 +96,7 @@ h1 {
     top: 10rem;
     left: 11.25rem;
     filter: opacity(0.8);
+    animation: loop alternate-reverse 5s infinite;
 }
 
 .two {
@@ -105,6 +106,25 @@ h1 {
     top: 10rem;
     left: 53.75rem;
     filter: opacity(0.8);
+    animation: revloop alternate-reverse 5s infinite;
+}
+
+@keyframes loop {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes revloop {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .sgpa {
@@ -118,11 +138,6 @@ h1 {
     align-items: center;
     color: white;
     font-size: xx-large;
-}
-
-.sgpa:hover {
-    color: black;
-    background-color: white;
 }
 
 .sgpa h6:hover {
@@ -146,11 +161,6 @@ h6 {
     align-items: center;
     color: white;
     font-size: xx-large;
-}
-
-.cgpa:hover {
-    color: black;
-    background-color: white;
 }
 
 .cgpa h6:hover {
