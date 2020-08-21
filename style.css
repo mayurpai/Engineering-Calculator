@@ -78,8 +78,6 @@ h1 {
     text-shadow: .5rem .5rem 0 grey;
 }
 
-h6 {}
-
 .holder {
     position: absolute;
     background-color: transparent;
@@ -89,6 +87,24 @@ h6 {}
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.one {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: 10rem;
+    left: 11.25rem;
+    filter: opacity(0.8);
+}
+
+.two {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: 10rem;
+    left: 53.75rem;
+    filter: opacity(0.8);
 }
 
 .sgpa {
