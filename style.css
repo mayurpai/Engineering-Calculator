@@ -118,6 +118,42 @@ html {
     background-size: cover;
 }
 
+.holder {
+    position: relative;
+    background-color: transparent;
+    height: 40rem;
+    width: 85rem;
+    top: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(-2%);
+}
+
+.sgpa {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1rem 1rem 0 1rem grey;
+}
+
+.cgpa {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1rem 1rem 0 1rem grey;
+}
+
 a {
     text-decoration: none;
 }
