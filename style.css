@@ -209,12 +209,10 @@ h1 {
 }
 
 .footer {
-    bottom: -30rem;
-    margin-bottom: 4rem;
-    height: 5rem;
-    width: 100vw;
     position: absolute;
     background-color: transparent;
+    height: 5rem;
+    width: 100vw;
     overflow: hidden;
 }
 
