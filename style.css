@@ -78,6 +78,8 @@ h1 {
     text-shadow: .5rem .5rem 0 grey;
 }
 
+h6 {}
+
 .holder {
     position: absolute;
     background-color: transparent;
@@ -98,7 +100,23 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1rem 1rem 0 1rem grey;
+    color: white;
+    font-size: xx-large;
+}
+
+.sgpa:hover {
+    color: black;
+    background-color: white;
+}
+
+.sgpa h6:hover {
+    transition: 0.5s linear;
+    transform: scale(1.1);
+}
+
+h6 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
 }
 
 .cgpa {
@@ -110,7 +128,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1rem 1rem 0 1rem grey;
+    color: white;
+    font-size: xx-large;
+}
+
+.cgpa:hover {
+    color: black;
+    background-color: white;
+}
+
+.cgpa h6:hover {
+    transition: 0.5s linear;
+    transform: scale(1.1);
 }
 
 a {
@@ -159,7 +188,7 @@ ul a:hover {
 }
 
 #copy {
-    color: white;
+    color: gray;
     position: absolute;
     background-color: transparent;
     text-align: center;
@@ -170,7 +199,7 @@ ul a:hover {
 }
 
 #by {
-    color: white;
+    color: gray;
     position: absolute;
     background-color: transparent;
     letter-spacing: 0;
@@ -185,7 +214,7 @@ i {
 
 #fb {
     position: absolute;
-    color: white;
+    color: gray;
     top: 90%;
     margin-right: 5rem;
     font-size: 3rem;
@@ -194,7 +223,7 @@ i {
 
 #git {
     position: absolute;
-    color: white;
+    color: gray;
     top: 90%;
     margin-right: 4rem;
     font-size: 3rem;
@@ -203,7 +232,7 @@ i {
 
 #twitter {
     position: absolute;
-    color: white;
+    color: gray;
     top: 90%;
     margin-right: 3rem;
     font-size: 3rem;
@@ -212,7 +241,7 @@ i {
 
 #insta {
     position: absolute;
-    color: white;
+    color: gray;
     top: 90%;
     margin-right: 2rem;
     font-size: 3rem;
@@ -221,7 +250,7 @@ i {
 
 #link {
     position: absolute;
-    color: white;
+    color: gray;
     top: 90%;
     margin-right: 1rem;
     font-size: 3rem;
