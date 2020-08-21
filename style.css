@@ -227,7 +227,7 @@ h1 {
 
 .sgpa h6:hover {
     transition: 0.5s linear;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .cgpa {
@@ -242,7 +242,7 @@ h1 {
 
 .cgpa h6:hover {
     transition: 0.5s linear;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 a {
