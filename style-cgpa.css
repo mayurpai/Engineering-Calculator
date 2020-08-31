@@ -544,12 +544,14 @@ input {
     border: none;
     border-bottom: .1px solid gray;
     background: transparent;
+    width: auto;
     display: block;
     color: #fff;
     font-weight: bold;
     font-family: 'Poppins';
     font-size: 1.4rem;
     padding: .3rem .3rem;
+    text-align: center;
 }
 
 .semester {
@@ -591,6 +593,7 @@ label {
     font-family: 'Poppins';
     font-size: 1.4rem;
     padding: .3rem .3rem;
+    pointer-events: none;
 }
 
 input::-webkit-input-placeholder {
