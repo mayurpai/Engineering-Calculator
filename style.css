@@ -185,16 +185,11 @@ h1 {
     align-items: center;
 }
 
-.one {
-    position: absolute;
-    filter: opacity(0.8);
-    animation: loop alternate-reverse 5s infinite;
-}
-
+.one,
 .two {
     position: absolute;
     filter: opacity(0.8);
-    animation: revloop alternate-reverse 5s infinite;
+    animation: loop linear .1s infinite;
 }
 
 @keyframes loop {
@@ -203,15 +198,6 @@ h1 {
     }
     100% {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes revloop {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
     }
 }
 
