@@ -81,7 +81,7 @@ html {
 
 @media(max-width: 1200px) {
     html {
-        font-size: 65%;
+        font-size: 45%;
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -107,7 +107,7 @@ html {
 
 @media(max-width: 768px) {
     html {
-        font-size: 35%;
+        font-size: 25.5%;
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -133,7 +133,7 @@ html {
 
 @media(max-width: 450px) {
     html {
-        font-size: 27%;
+        font-size: 22%;
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -159,7 +159,7 @@ html {
 
 @media(max-width: 390px) {
     html {
-        font-size: 22.5%;
+        font-size: 19%;
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -185,7 +185,7 @@ html {
 
 @media(max-width: 320px) {
     html {
-        font-size: 21%;
+        font-size: 17%;
     }
     h6 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
