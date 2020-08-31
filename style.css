@@ -154,7 +154,7 @@ html {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: black;
+    background: url('images/bg.jpg');
     background-size: cover;
 }
 
@@ -163,7 +163,7 @@ html {
     margin-top: 10rem;
     display: flex;
     justify-content: center;
-    background: black;
+    background: transparent;
 }
 
 h1 {
