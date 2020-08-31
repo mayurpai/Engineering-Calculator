@@ -562,7 +562,7 @@ input {
 
 .sem {
     display: flex;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 label {
@@ -572,4 +572,27 @@ label {
     color: aliceblue;
     padding: .5rem 1rem;
     font-family: 'Poppins', sans-serif;
+}
+
+.result {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 70%;
+}
+
+.result input {
+    border: none;
+    border: .1px solid gray;
+    background: transparent;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    padding: .3rem .3rem;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
 }
