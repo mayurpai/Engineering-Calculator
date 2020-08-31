@@ -77,6 +77,12 @@ html {
         height: 32rem;
         width: 32rem;
     }
+    .button1 {
+        font-size: 1.5rem;
+    }
+    .button2 {
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -102,6 +108,12 @@ html {
     .all {
         height: 32rem;
         width: 32rem;
+    }
+    .button1 {
+        font-size: 1.0rem;
+    }
+    .button2 {
+        font-size: 1.0rem;
     }
 }
 
@@ -129,6 +141,12 @@ html {
         height: 32rem;
         width: 32rem;
     }
+    .button1 {
+        font-size: 1.3rem;
+    }
+    .button2 {
+        font-size: 1.3rem;
+    }
 }
 
 @media(max-width: 450px) {
@@ -154,6 +172,12 @@ html {
     .all {
         height: 32rem;
         width: 32rem;
+    }
+    .button1 {
+        font-size: 1.4rem;
+    }
+    .button2 {
+        font-size: 1.4rem;
     }
 }
 
@@ -181,6 +205,12 @@ html {
         height: 32rem;
         width: 32rem;
     }
+    .button1 {
+        font-size: 1rem;
+    }
+    .button2 {
+        font-size: 1rem;
+    }
 }
 
 @media(max-width: 320px) {
@@ -206,6 +236,12 @@ html {
     .all {
         height: 32rem;
         width: 32rem;
+    }
+    .button1 {
+        font-size: 0.1rem;
+    }
+    .button2 {
+        font-size: 0.1rem;
     }
 }
 
@@ -459,4 +495,51 @@ i {
 
 #insta:hover {
     color: #c32aa3;
+}
+
+.button1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+    background-image: linear-gradient(to right, white 0%, grey 100%);
+    position: absolute;
+    border-radius: 4.0rem;
+    width: 15.0rem;
+    left: 14.5rem;
+    top: 35rem;
+    z-index: 2;
+    height: 4.0rem;
+    display: grid;
+    place-items: center;
+}
+
+.button1:hover,
+.button2:hover {
+    background-position: right center;
+    transform: scale(1.03);
+    transition: linear 0.25s;
+}
+
+.t {
+    display: flex;
+}
+
+.button2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+    background-image: linear-gradient(to right, white 0%, grey 100%);
+    position: absolute;
+    border-radius: 4.0rem;
+    width: 15.0rem;
+    left: 18.5rem;
+    top: 35rem;
+    z-index: 2;
+    height: 4.0rem;
+    display: grid;
+    place-items: center;
 }
