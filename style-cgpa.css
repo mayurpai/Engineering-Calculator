@@ -539,3 +539,37 @@ i {
     display: grid;
     place-items: center;
 }
+
+input {
+    border: none;
+    border-bottom: .1px solid gray;
+    background: transparent;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    padding: .3rem .3rem;
+}
+
+.semester {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 24%;
+}
+
+.sem {
+    display: flex;
+    padding: 1rem;
+}
+
+label {
+    height: auto;
+    width: auto;
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: .5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+}
