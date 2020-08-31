@@ -29,17 +29,27 @@ html {
         height: 32rem;
         width: 32rem;
     }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
     .one {
         height: 32rem;
         width: 32rem;
         top: 4rem;
-        left: 5.25rem;
+        left: 2.25rem;
     }
     .two {
         height: 32rem;
         width: 32rem;
         top: 4rem;
-        right: 5.25rem;
+        right: 2.25rem;
+    }
+    .three {
+        height: 32rem;
+        width: 32rem;
+        top: 4rem;
+        align-items: center;
     }
 }
 
@@ -60,6 +70,10 @@ html {
         width: 32rem;
     }
     .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
         height: 32rem;
         width: 32rem;
     }
@@ -85,6 +99,10 @@ html {
         height: 32rem;
         width: 32rem;
     }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
 }
 
 @media(max-width: 768px) {
@@ -104,6 +122,10 @@ html {
         width: 32rem;
     }
     .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
         height: 32rem;
         width: 32rem;
     }
@@ -129,6 +151,10 @@ html {
         height: 32rem;
         width: 32rem;
     }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
 }
 
 @media(max-width: 390px) {
@@ -151,6 +177,10 @@ html {
         height: 32rem;
         width: 32rem;
     }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
 }
 
 @media(max-width: 320px) {
@@ -170,6 +200,10 @@ html {
         width: 32rem;
     }
     .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
         height: 32rem;
         width: 32rem;
     }
@@ -206,23 +240,19 @@ h1 {
     position: absolute;
     background-color: transparent;
     height: 40rem;
-    width: 85rem;
+    width: 110rem;
     top: 20rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.one {
-    position: absolute;
-    filter: opacity(0.8);
-    animation: loop alternate-reverse 5s infinite;
-}
-
+.three,
+.one,
 .two {
     position: absolute;
     filter: opacity(0.8);
-    animation: revloop alternate-reverse 5s infinite;
+    animation: loop linear .1s infinite;
 }
 
 @keyframes loop {
@@ -231,15 +261,6 @@ h1 {
     }
     100% {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes revloop {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
     }
 }
 
@@ -271,6 +292,22 @@ h1 {
 }
 
 .cgpa h6:hover {
+    transition: 0.5s linear;
+    transform: scale(1.05);
+}
+
+.all {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.all h6:hover {
     transition: 0.5s linear;
     transform: scale(1.05);
 }
