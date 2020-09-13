@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media(max-width: 2560px) {
+    html {
+        font-size: 65%;
+    }
+    h6 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+    }
+    .sgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
+    .one {
+        height: 32rem;
+        width: 32rem;
+        top: 4rem;
+        left: 2.25rem;
+    }
+    .two {
+        height: 32rem;
+        width: 32rem;
+        top: 4rem;
+        right: 2.25rem;
+    }
+    .three {
+        height: 32rem;
+        width: 32rem;
+        top: 4rem;
+        align-items: center;
+    }
+    .semester {
+        top: 18rem;
+    }
+}
+
+@media(max-width: 1600px) {
+    html {
+        font-size: 65%;
+    }
+    h6 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.4rem;
+    }
+    .sgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
+    .button1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
+    }
+    .button2 {
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
+    }
+    .semester {
+        top: 18rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 45%;
+    }
+    h6 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4.7rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.35rem;
+    }
+    .sgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
+    .button1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
+    }
+    .button2 {
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
+    }
+    .semester {
+        top: 18rem;
+    }
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 25.5%;
+    }
+    h6 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4.7rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+    }
+    .sgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
+    .button1 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    .button2 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 4.4rem;
+    }
+    .sem label {
+        font-size: 4.4rem;
+    }
+    .result input {
+        font-size: 3.0rem;
+        height: max-content;
+        width: 25rem;
+    }
+    .semester {
+        top: 36rem;
+    }
+}
+
+@media(max-width: 450px) {
+    html {
+        font-size: 22%;
+    }
+    h6 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4.5rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+    }
+    .sgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
+    .button1 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    .button2 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 5.4rem;
+    }
+    .sem label {
+        font-size: 5.4rem;
+    }
+    .result input {
+        font-size: 3.0rem;
+        height: max-content;
+        width: 25rem;
+    }
+}
+
+@media(max-width: 390px) {
+    html {
+        font-size: 19%;
+    }
+    h6 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4.5rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+    }
+    .sgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
+    .button1 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    .button2 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 5.4rem;
+    }
+    .sem label {
+        font-size: 5.4rem;
+    }
+    .result input {
+        font-size: 3.0rem;
+        height: max-content;
+        width: 25rem;
+    }
+}
+
+@media(max-width: 320px) {
+    html {
+        font-size: 17%;
+    }
+    h6 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+    }
+    .sgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .cgpa {
+        height: 32rem;
+        width: 32rem;
+    }
+    .all {
+        height: 32rem;
+        width: 32rem;
+    }
+    .button1 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    .button2 {
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 5.4rem;
+    }
+    .sem label {
+        font-size: 5.4rem;
+    }
+    .result input {
+        font-size: 3.0rem;
+        height: max-content;
+        width: 25rem;
+    }
+}
+
+@media(max-height: 610px) {
+    .result {
+        opacity: 0;
+    }
+    .cal {
+        opacity: 0;
+    }
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: url('images/bg.jpg');
+    background-size: cover;
+}
+
+.header {
+    position: relative;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+h1 {
+    font-family: 'Red Rose', cursive;
+    font-size: 6rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: .5rem .5rem 0 grey;
+}
+
+.holder {
+    position: absolute;
+    background-color: transparent;
+    height: 40rem;
+    width: 110rem;
+    top: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.three,
+.one,
+.two {
+    position: absolute;
+    filter: opacity(0.8);
+    animation: loop linear .1s infinite;
+}
+
+@keyframes loop {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sgpa {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.sgpa h6:hover {
+    transition: 0.5s linear;
+    transform: scale(1.05);
+}
+
+.cgpa {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.cgpa h6:hover {
+    transition: 0.5s linear;
+    transform: scale(1.05);
+}
+
+.all {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.all h6:hover {
+    transition: 0.5s linear;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+}
+
+#by a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    width: 100vw;
+    height: 15rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 2.5rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: .2rem .2rem 0 grey;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: 0.1s linear;
+}
+
+ul a:hover {
+    border-bottom: .1rem solid#fff;
+    transform: scale(1.1);
+}
+
+.footer {
+    position: relative;
+    background-color: transparent;
+    height: 5rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#copy {
+    color: gray;
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+    top: 90%;
+    left: 46.5%;
+}
+
+#by {
+    color: gray;
+    position: absolute;
+    background-color: transparent;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+    top: 90%;
+    left: 3rem;
+}
+
+i {
+    background: transparent;
+}
+
+#fb {
+    position: absolute;
+    color: gray;
+    top: 90%;
+    margin-right: 5rem;
+    font-size: 3rem;
+    right: 15rem;
+}
+
+#git {
+    position: absolute;
+    color: gray;
+    top: 90%;
+    margin-right: 4rem;
+    font-size: 3rem;
+    right: 11.5rem;
+}
+
+#twitter {
+    position: absolute;
+    color: gray;
+    top: 90%;
+    margin-right: 3rem;
+    font-size: 3rem;
+    right: 8rem;
+}
+
+#insta {
+    position: absolute;
+    color: gray;
+    top: 90%;
+    margin-right: 2rem;
+    font-size: 3rem;
+    right: 4.5rem;
+}
+
+#link {
+    position: absolute;
+    color: gray;
+    top: 90%;
+    margin-right: 1rem;
+    font-size: 3rem;
+    right: 1rem;
+}
+
+ ::-webkit-scrollbar {
+    width: .8rem;
+}
+
+ ::-webkit-scrollbar-thumb {
+    animation: load alternate-reverse 0.1s infinite;
+    background: linear-gradient(orange, white);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    animation: load alternate-reverse 0.1s infinite;
+    background: linear-gradient(white, orange);
+}
+
+#fb:hover {
+    color: #1877f2;
+}
+
+#git:hover {
+    color: #6e5494;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#link:hover {
+    color: #007bb5;
+}
+
+#insta:hover {
+    color: #c32aa3;
+}
+
+.button1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+    background-image: linear-gradient(to right, white 0%, grey 100%);
+    border-radius: 4.0rem;
+    z-index: 2;
+    margin: 0 1rem;
+}
+
+.button1:hover,
+.button2:hover {
+    background-position: right center;
+    transform: scale(1.03);
+    transition: linear 0.25s;
+}
+
+.button2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+    background-image: linear-gradient(to right, white 0%, grey 100%);
+    border-radius: 4.0rem;
+    z-index: 2;
+    margin: 0 1rem;
+}
+
+input {
+    border: none;
+    border-bottom: .1px solid gray;
+    background: transparent;
+    width: auto;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding: .3rem .3rem;
+    text-align: center;
+}
+
+.semester {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sem {
+    display: flex;
+    padding: .5rem;
+}
+
+label {
+    height: auto;
+    width: auto;
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: .5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.result {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 75%;
+    overflow: hidden;
+}
+
+.cal {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 80%;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.sem {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.result input {
+    border: none;
+    border: .1px solid gray;
+    background: transparent;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    padding: .3rem .3rem;
+    font-family: 'Poppins';
+    pointer-events: none;
+    margin: 0 1rem;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+nput::-webkit-input-placeholder {
+    text-align: center;
+}
