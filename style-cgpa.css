@@ -51,6 +51,9 @@
             top: 4rem;
             align-items: center;
         }
+        .semester {
+            top: 18rem;
+        }
     }
     
     @media(max-width: 1600px) {
@@ -87,6 +90,9 @@
             height: 4rem;
             width: 15rem;
         }
+        .semester {
+            top: 18rem;
+        }
     }
     
     @media(max-width: 1200px) {
@@ -122,6 +128,9 @@
             font-size: 1.5rem;
             height: 4rem;
             width: 15rem;
+        }
+        .semester {
+            top: 18rem;
         }
     }
     
@@ -167,6 +176,9 @@
         }
         .result input {
             font-size: 3.0rem;
+        }
+        .semester {
+            top: 36rem;
         }
     }
     
@@ -615,7 +627,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        top: 18rem;
     }
     
     .sem {
@@ -659,6 +670,7 @@
         padding: .3rem .3rem;
         font-family: 'Poppins';
         pointer-events: none;
+        margin: 0 1rem;
     }
     
     input::-webkit-input-placeholder {
