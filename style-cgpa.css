@@ -655,7 +655,7 @@
         position: absolute;
         display: flex;
         justify-content: center;
-        top: 70%;
+        top: 75%;
         overflow: hidden;
     }
     
@@ -663,7 +663,7 @@
         position: absolute;
         display: flex;
         justify-content: space-between;
-        top: 75%;
+        top: 80%;
         margin: 2rem;
         overflow: hidden;
     }
@@ -683,4 +683,17 @@
     
     input::-webkit-input-placeholder {
         text-align: center;
+    }
+    
+    .note {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        top: 70%;
+    }
+    
+    .note p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        color: wheat;
     }
