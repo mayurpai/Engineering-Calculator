@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/m_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../Engineering-Calculator/style-sgpa.css">
-    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="../Engineering-Calculator/chemCycle.css">
+    <title>SGPA | Chemistry Cycle</title>
 </head>
 
 <body>
@@ -29,35 +29,51 @@
             </ul>
         </nav>
         <div class="header">
-            <h1>SGPA Calculator&nbsp;</h1>
+            <h1>Chemistry Cycle&nbsp;</h1>
+        </div>
+        <div class="semester">
+            <div class="sem">
+                <label for="Semester">18MAT11/21 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+            <div class="sem">
+                <label for="Semester">18CHE12/22 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+            <div class="sem">
+                <label for="Semester">18CPS13/23 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+            <div class="sem">
+                <label for="Semester">18ELN14/24 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+            <div class="sem">
+                <label for="Semester">18ME15/25 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+            <div class="sem">
+                <label for="Semester">18CHEL16/26 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+            <div class="sem">
+                <label for="Semester">18CPL17/27 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+            <div class="sem">
+                <label for="Semester">18EGH18/28 :</label>
+                <input type="number" min="0" max="100" value="0" />
+            </div>
+        </div>
+        <div class="result">
+            <input type="number" name="sgpa" id="sgpa" placeholder="SGPA" readonly />&nbsp;&nbsp;
+            <input type="number " name="perc " id="perc" placeholder="Percentage" readonly />
+        </div>
+        <div class="cal">
+            <button class="button1"><p>Calculate</p></button>
+            <a href=""><button class="button2"><p>Reset</p></button></a>
         </div>
 
-        <div class="holder">
-            <img src="images/bubble.png" class="one" alt="">
-            <a href="phyCycle.html" title="Physics Cycle">
-
-                <div class="sgpa">
-                    <h6>First/Second Semester</h6><br/>
-                    <h5>{Physics Cycle}</h5>
-                </div>
-            </a>
-            <img src="images/bubble.png" class="three" alt="">
-            <a href="#" title="Third & Forth Semester">
-
-                <div class="all">
-                    <h6>Third/Forth Semester</h6><br/>
-                    <h5>{All Branches}</h5>
-                </div>
-            </a>
-            <img src="images/bubble.png" class="two" alt="">
-            <a href="chemCycle.html" title="Chemistry Cycle">
-                <div class="cgpa">
-                    <h6>First/Second Semester</h6><br/>
-                    <h5>{Chemistry Cycle}</h5>
-                </div>
-            </a>
-
-        </div>
         <footer>
             <p id="by">Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://mayurpai.github.io/" target=blank>Mayur Pai</a></p>
             <p id="copy">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020</p>
