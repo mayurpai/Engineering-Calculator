@@ -176,6 +176,8 @@
         }
         .result input {
             font-size: 3.0rem;
+            height: max-content;
+            width: 25rem;
         }
         .semester {
             top: 36rem;
@@ -224,6 +226,8 @@
         }
         .result input {
             font-size: 3.0rem;
+            height: max-content;
+            width: 25rem;
         }
     }
     
@@ -269,6 +273,8 @@
         }
         .result input {
             font-size: 3.0rem;
+            height: max-content;
+            width: 25rem;
         }
     }
     
@@ -314,10 +320,12 @@
         }
         .result input {
             font-size: 3.0rem;
+            height: max-content;
+            width: 25rem;
         }
     }
     
-    @media(max-height: 555px) {
+    @media(max-height: 610px) {
         .result {
             opacity: 0;
         }
