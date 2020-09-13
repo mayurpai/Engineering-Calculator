@@ -79,9 +79,13 @@ html {
     }
     .button1 {
         font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
     }
     .button2 {
         font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
     }
 }
 
@@ -110,10 +114,14 @@ html {
         width: 32rem;
     }
     .button1 {
-        font-size: 1.0rem;
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
     }
     .button2 {
-        font-size: 1.0rem;
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 15rem;
     }
 }
 
@@ -142,10 +150,23 @@ html {
         width: 32rem;
     }
     .button1 {
-        font-size: 1.3rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
     }
     .button2 {
-        font-size: 1.3rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 4.4rem;
+    }
+    .sem label {
+        font-size: 4.4rem;
+    }
+    .result input {
+        font-size: 3.4rem;
     }
 }
 
@@ -174,10 +195,23 @@ html {
         width: 32rem;
     }
     .button1 {
-        font-size: 1.4rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
     }
     .button2 {
-        font-size: 1.4rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 5.4rem;
+    }
+    .sem label {
+        font-size: 5.4rem;
+    }
+    .result input {
+        font-size: 3.4rem;
     }
 }
 
@@ -206,10 +240,23 @@ html {
         width: 32rem;
     }
     .button1 {
-        font-size: 1rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
     }
     .button2 {
-        font-size: 1rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 5.4rem;
+    }
+    .sem label {
+        font-size: 5.4rem;
+    }
+    .result input {
+        font-size: 3.4rem;
     }
 }
 
@@ -238,10 +285,23 @@ html {
         width: 32rem;
     }
     .button1 {
-        font-size: 0.1rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
     }
     .button2 {
-        font-size: 0.1rem;
+        font-size: 3rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    input {
+        font-size: 5.4rem;
+    }
+    .sem label {
+        font-size: 5.4rem;
+    }
+    .result input {
+        font-size: 3.4rem;
     }
 }
 
@@ -504,15 +564,9 @@ i {
     transition: 0.5s;
     color: black;
     background-image: linear-gradient(to right, white 0%, grey 100%);
-    position: absolute;
     border-radius: 4.0rem;
-    width: 15.0rem;
-    left: 36.5%;
-    top: 80%;
     z-index: 2;
-    height: 4.0rem;
-    display: grid;
-    place-items: center;
+    margin: 0 1rem;
 }
 
 .button1:hover,
@@ -529,15 +583,9 @@ i {
     transition: 0.5s;
     color: black;
     background-image: linear-gradient(to right, white 0%, grey 100%);
-    position: absolute;
     border-radius: 4.0rem;
-    width: 15.0rem;
-    right: 36.5%;
-    top: 80%;
     z-index: 2;
-    height: 4.0rem;
-    display: grid;
-    place-items: center;
+    margin: 0 1rem;
 }
 
 input {
@@ -549,7 +597,6 @@ input {
     color: #fff;
     font-weight: bold;
     font-family: 'Poppins';
-    font-size: 1.4rem;
     padding: .3rem .3rem;
     text-align: center;
 }
@@ -583,6 +630,14 @@ label {
     top: 70%;
 }
 
+.cal {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 75%;
+    margin: 2rem;
+}
+
 .result input {
     border: none;
     border: .1px solid gray;
@@ -590,9 +645,8 @@ label {
     display: block;
     color: #fff;
     font-weight: bold;
-    font-family: 'Poppins';
-    font-size: 1.4rem;
     padding: .3rem .3rem;
+    font-family: 'Poppins';
     pointer-events: none;
 }
 
