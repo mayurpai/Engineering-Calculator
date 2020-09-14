@@ -34,43 +34,43 @@
         <div class="semester">
             <div class="sem">
                 <label for="Semester">Semester 1 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id="1" type="number" min="0" max="10" value="0" />
             </div>
             <div class="sem">
                 <label for="Semester">Semester 2 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id="2" type="number" min="0" max="10" value="0" />
             </div>
             <div class="sem">
                 <label for="Semester">Semester 3 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id="3" type="number" min="0" max="10" value="0" />
             </div>
             <div class="sem">
                 <label for="Semester">Semester 4 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id="4" type="number" min="0" max="10" value="0" />
             </div>
             <div class="sem">
                 <label for="Semester">Semester 5 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id="5" type="number" min="0" max="10" value="0" />
             </div>
             <div class="sem">
                 <label for="Semester">Semester 6 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id="6" type="number" min="0" max="10" value="0" />
             </div>
             <div class="sem">
                 <label for="Semester">Semester 7 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id=7 type="number" min="0" max="10" value="0" />
             </div>
             <div class="sem">
                 <label for="Semester">Semester 8 :</label>
-                <input type="number" min="0" max="10" value="0" />
+                <input id="8" type="number" min="0" max="10" value="0" />
             </div>
         </div>
         <div class="result">
-            <input type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
-            <input type="number " name="perc " id="perc" placeholder="Percentage" readonly />
+            <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
+            <input id="perc" type="number " name="perc " id="perc" placeholder="Percentage" readonly />
         </div>
         <div class="cal">
-            <button class="button1"><p>Calculate</p></button>
+            <button onclick="calculate()" class="button1"><p id="a">Calculate</p></button>
             <a href=""><button class="button2"><p>Reset</p></button></a>
         </div>
         <div class="note">
@@ -86,6 +86,63 @@
             <a href="https://github.com/mayurpai" Title="Mayur Pai" target=blank><i class="fa fa-github fa-2x" id="git" aria-hidden="true"></i></a>
         </footer>
     </div>
+    <script>
+        function calculate() {
+
+            var Subject1 = document.getElementById('1').value;
+            var Subject2 = document.getElementById('2').value;
+            var Subject3 = document.getElementById('3').value;
+            var Subject4 = document.getElementById('4').value;
+            var Subject5 = document.getElementById('5').value;
+            var Subject6 = document.getElementById('6').value;
+            var Subject7 = document.getElementById('7').value;
+            var Subject8 = document.getElementById('8').value;
+            if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0 && Subject7 != 0 && Subject8 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) + Number(Subject6) + Number(Subject7) + Number(Subject8)) / 8;
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0 && Subject7 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) + Number(Subject6) + Number(Subject7)) / 7;
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) + Number(Subject6)) / 6;
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5)) / 5;
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4)) / 4;
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3)) / 3;
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else if (Subject1 != 0 && Subject2 != 0) {
+                var x = (Number(Subject1) + Number(Subject2)) / 2;
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else if (Subject1 != 0) {
+                var x = Number(Subject1);
+                document.getElementById("cgpa").value = x;
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y + " %";
+            } else {
+                alert("Enter The CGPA\'s");
+            }
+
+        }
+    </script>
 </body>
 
 </html>
