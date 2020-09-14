@@ -327,10 +327,10 @@ html {
 
 @media(max-height: 610px) {
     .result {
-        opacity: 0;
+        display: none !important;
     }
     .cal {
-        opacity: 0;
+        display: none !important;
     }
 }
 
