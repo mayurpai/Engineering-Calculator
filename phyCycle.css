@@ -325,43 +325,7 @@ html {
     }
 }
 
-@media(max-height: 450px) and (max-width: 320px) {
-    .result {
-        display: none !important;
-    }
-    .cal {
-        display: none !important;
-    }
-}
-
-@media(max-height: 510px) and (max-width: 390px) {
-    .result {
-        display: none !important;
-    }
-    .cal {
-        display: none !important;
-    }
-}
-
-@media(max-height: 595px) and (max-width: 450px) {
-    .result {
-        display: none !important;
-    }
-    .cal {
-        display: none !important;
-    }
-}
-
-@media(max-height: 620px) and (max-width: 786px) {
-    .result {
-        display: none !important;
-    }
-    .cal {
-        display: none !important;
-    }
-}
-
-@media(max-height: 555px) and (max-width: 1200px) {
+@media(max-height: 510px) and (max-width: 400px) {
     .result {
         display: none !important;
     }
