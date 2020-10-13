@@ -332,6 +332,9 @@
         .cal {
             opacity: 0;
         }
+        .note{
+            opacity: 0;
+        }
     }
     
     .container {
