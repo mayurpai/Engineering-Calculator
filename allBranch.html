@@ -34,39 +34,39 @@
         <div class="semester">
             <div class="sem">
                 <label for="Semester">18MAT31/41 :</label>
-                <input id="1" type="number" min="0" max="100" value="0" />
+                <input id="1" type="number" min="0" max="100" value="0" required />
             </div>
             <div class="sem">
                 <label for="Semester">18**32/42 :</label>
-                <input id="2" type="number" min="0" max="100" value="0" />
+                <input id="2" type="number" min="0" max="100" value="0" required />
             </div>
             <div class="sem">
                 <label for="Semester">18**33/43 :</label>
-                <input id="3" type="number" min="0" max="100" value="0" />
+                <input id="3" type="number" min="0" max="100" value="0" required/>
             </div>
             <div class="sem">
                 <label for="Semester">18**34/44 :</label>
-                <input id="4" type="number" min="0" max="100" value="0" />
+                <input id="4" type="number" min="0" max="100" value="0" required />
             </div>
             <div class="sem">
                 <label for="Semester">18**35/45 :</label>
-                <input id="5" type="number" min="0" max="100" value="0" />
+                <input id="5" type="number" min="0" max="100" value="0" required/>
             </div>
             <div class="sem">
                 <label for="Semester">18**36/46 :</label>
-                <input id="6" type="number" min="0" max="100" value="0" />
+                <input id="6" type="number" min="0" max="100" value="0" required />
             </div>
             <div class="sem">
                 <label for="Semester">18**L37/47 :</label>
-                <input id="7" type="number" min="0" max="100" value="0" />
+                <input id="7" type="number" min="0" max="100" value="0" required/>
             </div>
             <div class="sem">
                 <label for="Semester">18**L38/48 :</label>
-                <input id="8" type="number" min="0" max="100" value="0" />
+                <input id="8" type="number" min="0" max="100" value="0" required />
             </div>
             <div class="sem">
                 <label for="Semester">18CPC39/49 Or Kannada :</label>
-                <input id="9" type="number" min="0" max="100" value="0" />
+                <input id="9" type="number" min="0" max="100" value="0" required/>
             </div>
         </div>
         <div class="result">
@@ -197,15 +197,15 @@
             var Subject7 = document.getElementById('7').value;
             if (Subject7 >= 90) {
                 Grade7 = 10;
-            } else if (Subject2 >= 80 && Subject7 < 90) {
+            } else if (Subject7 >= 80 && Subject7 < 90) {
                 Grade7 = 9;
-            } else if (Subject2 >= 70 && Subject7 < 80) {
+            } else if (Subject7 >= 70 && Subject7 < 80) {
                 Grade7 = 8;
-            } else if (Subject2 >= 60 && Subject7 < 70) {
+            } else if (Subject7 >= 60 && Subject7 < 70) {
                 Grade7 = 7;
-            } else if (Subject2 >= 45 && Subject7 < 60) {
+            } else if (Subject7 >= 45 && Subject7 < 60) {
                 Grade7 = 6;
-            } else if (Subject2 >= 40 && Subject7 < 45) {
+            } else if (Subject7 >= 40 && Subject7 < 45) {
                 Grade7 = 4;
             } else {
                 Grade7 = 0;
@@ -247,7 +247,7 @@
             var x = ((Grade1 * 3) + (Grade2 * 4) + (Grade3 * 3) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 3) + (Grade7 * 2) + (Grade8 * 2) + (Grade9 * 1)) / 24;
             document.getElementById("sgpa").value = x.toFixed(2);
             var y = (x - 0.75) * 10;
-            document.getElementById("perc").value = y + " %";
+            document.getElementById("perc").value = y.toFixed(2) + " %";
         }
     </script>
 </body>
