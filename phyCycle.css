@@ -516,6 +516,20 @@ i {
     right: 15rem;
 }
 
+#whatsapp {
+    position: absolute;
+    color: gray;
+    top: 90%;
+    margin-right: 4rem;
+    font-size: 3rem;
+    right: 19.5rem;
+}
+
+#whatsapp:hover {
+    color: #25D366;
+}
+
+
 #git {
     position: absolute;
     color: gray;
