@@ -2,90 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/m_icon1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style-cgpa.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/style/style-cgpa.css">
     <title>CGPA Calculator</title>
 </head>
 
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Home&nbsp;</li>
-                </a>
-                <a href="sgpa.html">
-                    <li>SGPA Calculator&nbsp;</li>
-                </a>
-                <a href="cgpa.html">
-                    <li>CGPA Calculator&nbsp;</li>
-                </a>
-            </ul>
-        </nav>
-        <div class="header">
-            <h1>CGPA Calculator&nbsp;</h1>
+        <video autoplay loop class="videoback" muted plays-inline>
+        <source src="Background.mp4 " type=video/mp4> </video> <div class="header">
+        <h1>CGPA&nbsp;&nbsp;Calculator&nbsp;</h1>
+    </div>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>Home&nbsp;</li>
+            </a>
+            <a href="sgpa.html">
+                <li>SGPA Calculator&nbsp;</li>
+            </a>
+            <a href="cgpa.html">
+                <li>CGPA Calculator&nbsp;</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="semester">
+        <div class="sem">
+            <label for="Semester">Semester 1 :</label>
+            <input id="1" type="number" min="0" max="10" placeholder="0-10" />
         </div>
-        <div class="semester">
-            <div class="sem">
-                <label for="Semester">Semester 1 :</label>
-                <input id="1" type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
-            <div class="sem">
-                <label for="Semester">Semester 2 :</label>
-                <input id="2" type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
-            <div class="sem">
-                <label for="Semester">Semester 3 :</label>
-                <input id="3" type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
-            <div class="sem">
-                <label for="Semester">Semester 4 :</label>
-                <input id="4" type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
-            <div class="sem">
-                <label for="Semester">Semester 5 :</label>
-                <input id="5" type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
-            <div class="sem">
-                <label for="Semester">Semester 6 :</label>
-                <input id="6" type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
-            <div class="sem">
-                <label for="Semester">Semester 7 :</label>
-                <input id=7 type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
-            <div class="sem">
-                <label for="Semester">Semester 8 :</label>
-                <input id="8" type="number" min="0" max="10" placeholder="0-10"/>
-            </div>
+        <div class="sem">
+            <label for="Semester">Semester 2 :</label>
+            <input id="2" type="number" min="0" max="10" placeholder="0-10" />
         </div>
-        <div class="result">
-            <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
-            <input id="perc" type="number " name="perc " id="perc" placeholder="Percentage" readonly />
+        <div class="sem">
+            <label for="Semester">Semester 3 :</label>
+            <input id="3" type="number" min="0" max="10" placeholder="0-10" />
         </div>
-        <div class="cal">
-            <button onclick="calculate()" class="button1"><p id="a">Calculate</p></button>
-            <a href=""><button class="button2"><p>Reset</p></button></a>
+        <div class="sem">
+            <label for="Semester">Semester 4 :</label>
+            <input id="4" type="number" min="0" max="10" placeholder="0-10" />
         </div>
-        <div class="note">
-            <p> Note: Leave the fields of semesters not completed as it is.</p>
+        <div class="sem">
+            <label for="Semester">Semester 5 :</label>
+            <input id="5" type="number" min="0" max="10" placeholder="0-10" />
         </div>
-        <footer>
-            <p id="by">Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://mayurpai.github.io/" target=blank>Mayur Pai</a></p>
-            <p id="copy">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020</p>
-            <a href="tel:961-160-9185"><i class="fa fa-whatsapp fa-2x" id="whatsapp" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100010154376824" Title="Mayur Pai" target=blank><i class="fa fa-facebook fa-2x" id="fb" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/Mayur_pai5" Title="Mayur_pai5" target=blank><i class="fa fa-twitter fa-2x" id="twitter" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/unmatched._.soul/" Title="unmatched._.soul" target=blank><i class="fa fa-instagram fa-2x" id="insta" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/mayur-pai5/" Title="Mayur Pai B H" target=blank><i class="fa fa-linkedin fa-2x" id="link" aria-hidden="true"></i></a>
-            <a href="https://github.com/mayurpai" Title="Mayur Pai" target=blank><i class="fa fa-github fa-2x" id="git" aria-hidden="true"></i></a>
-        </footer>
+        <div class="sem">
+            <label for="Semester">Semester 6 :</label>
+            <input id="6" type="number" min="0" max="10" placeholder="0-10" />
+        </div>
+        <div class="sem">
+            <label for="Semester">Semester 7 :</label>
+            <input id=7 type="number" min="0" max="10" placeholder="0-10" />
+        </div>
+        <div class="sem">
+            <label for="Semester">Semester 8 :</label>
+            <input id="8" type="number" min="0" max="10" placeholder="0-10" />
+        </div>
+    </div>
+    <div class="result">
+        <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
+        <input id="perc" type="number" name="perc " id="perc" placeholder="Percentage" readonly />
+    </div>
+    <div class="cal">
+        <button onclick="calculate()" class="button1">
+            <p id="a">Calculate</p>
+        </button>
+        <a href=""><button class="button2">
+                <p>Reset</p>
+            </button></a>
+    </div>
+    <div class="note">
+        <p> Note: Leave the fields of semesters not completed as it is.</p>
+    </div>
+    <div class="footer">
+        <p id="by">
+            Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
+            <a href="https://sourcerer.io/mayurpai" target="blank"><strong>Mayur Pai</strong></a>
+        </p>
+        <p id="copy">
+            Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020
+        </p>
+        <a href="tel:961-160-9185"><i class="fa fa-whatsapp fa-2x" id="whatsapp" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010154376824" title="Mayur Pai" target="blank"><i
+                class="fa fa-facebook fa-2x" id="fb" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/Mayur_pai5" title="Mayur_pai5" target="blank"><i class="fa fa-twitter fa-2x"
+                id="twitter" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/mayurpai19/" title="unmatched._.soul" target="blank"><i
+                class="fa fa-instagram fa-2x" id="insta" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/mayur-pai5/" title="Mayur Pai B H" target="blank"><i
+                class="fa fa-linkedin fa-2x" id="link" aria-hidden="true"></i></a>
+        <a href="https://github.com/mayurpai" title="Mayur Pai" target="blank"><i class="fa fa-github fa-2x" id="git"
+                aria-hidden="true"></i></a>
+    </div>
     </div>
     <script>
         function calculate() {
@@ -98,23 +113,30 @@
             var Subject6 = document.getElementById('6').value;
             var Subject7 = document.getElementById('7').value;
             var Subject8 = document.getElementById('8').value;
-            if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0 && Subject7 != 0 && Subject8 != 0) {
-                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) + Number(Subject6) + Number(Subject7) + Number(Subject8)) / 8;
+            if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0 &&
+                Subject7 != 0 && Subject8 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
+                    Number(Subject6) + Number(Subject7) + Number(Subject8)) / 8;
                 document.getElementById("cgpa").value = x.toFixed(2);
                 var y = (x - 0.75) * 10;
                 document.getElementById("perc").value = y.toFixed(2) + " %";
-            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0 && Subject7 != 0) {
-                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) + Number(Subject6) + Number(Subject7)) / 7;
+            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 !=
+                0 && Subject7 != 0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
+                    Number(Subject6) + Number(Subject7)) / 7;
                 document.getElementById("cgpa").value = x.toFixed(2);
                 var y = (x - 0.75) * 10;
                 document.getElementById("perc").value = y.toFixed(2) + " %";
-            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0) {
-                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) + Number(Subject6)) / 6;
+            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 !=
+                0) {
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
+                    Number(Subject6)) / 6;
                 document.getElementById("cgpa").value = x.toFixed(2);
                 var y = (x - 0.75) * 10;
                 document.getElementById("perc").value = y.toFixed(2) + " %";
             } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0) {
-                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5)) / 5;
+                var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5)) /
+                    5;
                 document.getElementById("cgpa").value = x.toFixed(2);
                 var y = (x - 0.75) * 10;
                 document.getElementById("perc").value = y.toFixed(2) + " %";
