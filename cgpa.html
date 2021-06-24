@@ -16,8 +16,8 @@
 <body>
     <div class="container">
         <video autoplay loop class="videoback" muted plays-inline>
-        <source src="Background.mp4 " type=video/mp4> </video> <div class="header">
-        <h1>CGPA&nbsp;&nbsp;Calculator&nbsp;</h1>
+            <source src="Background.mp4 " type=video/mp4> </video> <div class="header">
+            <h1>CGPA&nbsp;&nbsp;Calculator&nbsp;</h1>
     </div>
     <nav>
         <ul>
@@ -68,7 +68,7 @@
     </div>
     <div class="result">
         <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
-        <input id="perc" type="number" name="perc " id="perc" placeholder="Percentage" readonly />
+        <input id="perc" type="number " name="perc " id="perc" placeholder="Percentage" readonly />
     </div>
     <div class="cal">
         <button onclick="calculate()" class="button1">
@@ -117,51 +117,51 @@
                 Subject7 != 0 && Subject8 != 0) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
                     Number(Subject6) + Number(Subject7) + Number(Subject8)) / 8;
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 !=
                 0 && Subject7 != 0) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
                     Number(Subject6) + Number(Subject7)) / 7;
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 !=
                 0) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
                     Number(Subject6)) / 6;
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5)) /
                     5;
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4)) / 4;
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3)) / 3;
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else if (Subject1 != 0 && Subject2 != 0) {
                 var x = (Number(Subject1) + Number(Subject2)) / 2;
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else if (Subject1 != 0) {
                 var x = Number(Subject1);
-                document.getElementById("cgpa").value = x.toFixed(2);
+                document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(2) + " %";
+                document.getElementById("perc").value = y.toFixed(3) + " %";
             } else {
-                alert("Enter The CGPA\'s");
+                alert("Kindly Enter The Cumulative Grade Points Average (CGPA) Score\'s");
             }
 
         }
