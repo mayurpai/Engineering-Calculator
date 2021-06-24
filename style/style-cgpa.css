@@ -283,12 +283,14 @@ i {
 }
 
 .button1 {
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: bolder;
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
     text-align: center;
     transition: 0.5s;
-    color: black;
-    background-image: linear-gradient(to right, white 0%, grey 100%);
+    color: rgba(255, 255, 255, 0.1);
+    /* background-image: linear-gradient(to right, white 0%, grey 100%); */
     border-radius: 4.0rem;
     z-index: 2;
     margin: 0 1rem;
@@ -362,7 +364,8 @@ label {
     overflow: hidden;
 }
 
-#cgpa,#perc {
+#cgpa,
+#perc {
     font-family: 'Black Ops One', cursive;
     color: darkgray;
     letter-spacing: 0.1rem;
@@ -378,7 +381,7 @@ label {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    bottom: 10rem;
+    top: 70rem;
     margin: 2rem;
     overflow: hidden;
 }
@@ -401,7 +404,7 @@ input::-webkit-input-placeholder {
     position: fixed;
     display: grid;
     place-items: center;
-    bottom: 23rem;
+    top: 57rem;
 }
 
 .note p {
