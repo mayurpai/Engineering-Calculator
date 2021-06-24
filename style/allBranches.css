@@ -1,0 +1,453 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media(max-width: 2560px) {
+    html {
+        font-size: 65%;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 1600px) {
+    html {
+        font-size: 60%;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 32%;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 34%;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media(max-width: 450px) {
+    html {
+        font-size: 27.0%;
+    }
+
+    h1 {
+        font-size: 5.25rem;
+    }
+}
+
+@media(max-width: 390px) {
+    html {
+        font-size: 24.5%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 320px) {
+    html {
+        font-size: 22.5%;
+    }
+
+    h1 {
+        font-size: 4.75rem;
+    }
+}
+
+@media(max-width: 280px) {
+    html {
+        font-size: 20.5%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.container {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background: url('images/bg.jpg');
+    background-size: cover; */
+}
+
+.header {
+    position: fixed;
+    margin-top: 6rem;
+    height: max-content;
+    width: max-content;
+    background-color: transparent;
+}
+
+h1 {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.1);
+}
+
+a {
+    text-decoration: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 7.5rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul a {
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+    margin: 2.5rem 1.5rem;
+    font-family: 'Black Ops One', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: 1s all linear;
+    text-shadow: .5rem .5rem 0rem rgba(255, 255, 255, 0.1);
+}
+
+ul a:hover {
+    border-bottom: .1rem solid darkgray;
+    transform: scale(1.1);
+    text-shadow: none;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 5rem;
+    height: 6.5rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#copy {
+    color: darkgray;
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 0rem;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#by {
+    color: darkgray;
+    position: absolute;
+    background-color: transparent;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    left: 3rem;
+}
+
+i {
+    background: transparent;
+}
+
+#fb {
+    position: absolute;
+    color: darkgray;
+    margin-top: 2.5rem;
+    margin-right: 5rem;
+    font-size: 3rem;
+    right: 15rem;
+}
+
+#whatsapp {
+    position: absolute;
+    color: darkgray;
+    margin-top: 2.5rem;
+    margin-right: 5rem;
+    font-size: 3rem;
+    right: 18rem;
+}
+
+#whatsapp:hover {
+    color: #25D366;
+}
+
+#git {
+    position: absolute;
+    color: darkgray;
+    margin-top: 2.5rem;
+    margin-right: 4rem;
+    font-size: 3rem;
+    right: 11.5rem;
+}
+
+#twitter {
+    position: absolute;
+    color: darkgray;
+    margin-top: 2.5rem;
+    margin-right: 3rem;
+    font-size: 3rem;
+    right: 8rem;
+}
+
+#insta {
+    position: absolute;
+    color: darkgray;
+    margin-top: 2.5rem;
+    margin-right: 2rem;
+    font-size: 3rem;
+    right: 4.5rem;
+}
+
+#link {
+    position: absolute;
+    color: darkgray;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+    right: 1rem;
+}
+
+#fb:hover {
+    color: #1877f2;
+}
+
+#git:hover {
+    color: #6e5494;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#link:hover {
+    color: #007bb5;
+}
+
+#insta:hover {
+    color: #c32aa3;
+}
+
+.videoback {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.button1 {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.1);
+    /* background-image: linear-gradient(to right, white 0%, grey 100%); */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4.0rem;
+    z-index: 2;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    height: 5rem;
+    width: 18rem;
+}
+
+.button1:hover,
+.button2:hover {
+    background-position: right center;
+    transform: scale(1.05);
+    transition: linear 0.25s;
+    border: .25rem solid whitesmoke;
+}
+
+.button2 {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.1);
+    /* background-image: linear-gradient(to right, white 0%, grey 100%); */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4.0rem;
+    z-index: 2;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    height: 5rem;
+    width: 18rem;
+}
+
+button p {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    background: transparent;
+    width: auto;
+    display: block;
+    color: #fff;
+    font-family: 'Black Ops One', cursive;
+    padding: .3rem .3rem;
+    text-align: center;
+    transition: all .1s linear;
+}
+
+.sem input {
+    font-size: 2rem;
+    width: 10rem;
+
+}
+
+input:focus,
+input:active,
+select:focus {
+    border-color: transparent;
+    border-bottom: .2rem solid rgba(255, 255, 255, 0.1);
+    box-shadow: 1rem 0rem 0rem rgba(255, 255, 255, 0.15);
+    outline: none;
+}
+
+.semester {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 16rem;
+    text-align: center;
+}
+
+.sem {
+    display: flex;
+    padding: .1rem;
+}
+
+label {
+    height: auto;
+    width: auto;
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    padding: .5rem 1rem;
+    font-size: 3rem;
+}
+
+.result {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 60rem;
+    overflow: hidden;
+}
+
+#sgpa,
+#perc {
+    font-family: 'Black Ops One', cursive;
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    padding: .5rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cal {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 64rem;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.result input {
+    border: .25rem solid gray;
+    background: transparent;
+    display: block;
+    font-weight: bold;
+    padding: .3rem .3rem;
+    pointer-events: none;
+    margin: 0 1rem;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.note {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 57rem;
+}
+
+.note p {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    font-size: 2rem;
+}
