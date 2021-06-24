@@ -26,7 +26,7 @@ html {
 
     .holder {
         height: 40rem;
-        width: 140rem;
+        width: 150rem;
     }
 }
 
@@ -41,7 +41,7 @@ html {
 
     .holder {
         height: 40rem;
-        width: 140rem;
+        width: 150rem;
     }
 }
 
@@ -56,7 +56,7 @@ html {
 
     .holder {
         height: 40rem;
-        width: 140rem;
+        width: 150rem;
     }
 }
 
@@ -71,7 +71,7 @@ html {
 
     .holder {
         height: 80rem;
-        width: 80rem;
+        width: 90rem;
     }
 }
 
@@ -86,7 +86,7 @@ html {
 
     .holder {
         height: 80rem;
-        width: 80rem;
+        width: 90rem;
     }
 }
 
@@ -101,7 +101,7 @@ html {
 
     .holder {
         height: 80rem;
-        width: 80rem;
+        width: 90rem;
     }
 }
 
@@ -116,7 +116,7 @@ html {
 
     .holder {
         height: 80rem;
-        width: 80rem;
+        width: 90rem;
     }
 }
 
@@ -131,7 +131,7 @@ html {
 
     .holder {
         height: 80rem;
-        width: 80rem;
+        width: 90rem;
     }
 }
 
@@ -237,7 +237,8 @@ ul a:hover {
 
 .sgpa,
 .cgpa,
-.all {
+.all,
+.alls {
     position: relative;
     border: .2rem solid white;
     border-radius: 50%;
@@ -253,13 +254,15 @@ ul a:hover {
 
 .sgpa:hover,
 .cgpa:hover,
-.all:hover {
+.all:hover,
+.alls:hover {
     box-shadow: none;
 }
 
 .cgpa a h6:hover,
 .all a h6:hover,
-.sgpa a h6:hover {
+.sgpa a h6:hover,
+.alls a h6:hover {
     transition: 0.5s linear;
     transform: scale(1.025);
     color: whitesmoke;
