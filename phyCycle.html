@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/style/phyCycle.css">
+    <link rel="stylesheet" href="../Engineering-Calculator/style/phyCycle.css">
     <title>SGPA | Physics Cycle</title>
 </head>
 
 <body>
     <div class="container">
         <video autoplay loop class="videoback" muted plays-inline>
-            <source src="Background.mp4 " type=video/mp4> </video> <div class="header">
+            <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4> </video> <div class="header">
             <h1>Physics&nbsp;&nbsp;Cycle&nbsp;</h1>
     </div>
     <nav>
@@ -242,17 +242,22 @@
             }
             var x = ((Grade1 * 4) + (Grade2 * 4) + (Grade3 * 3) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 1) + (Grade7 *
                 1) + (Grade8 * 1)) / 20;
-            console.log(Grade1)
-            console.log(Grade2)
-            console.log(Grade3)
-            console.log(Grade4)
-            console.log(Grade5)
-            console.log(Grade6)
-            console.log(Grade7)
-            console.log(Grade8)
-            document.getElementById("sgpa").value = x.toFixed(3);
-            var y = (x - 0.75) * 10;
-            document.getElementById("perc").value = y.toFixed(3) + " %";
+            if (x) {
+                // console.log(Grade1)
+                // console.log(Grade2)
+                // console.log(Grade3)
+                // console.log(Grade4)
+                // console.log(Grade5)
+                // console.log(Grade6)
+                // console.log(Grade7)
+                // console.log(Grade8)
+                document.getElementById("sgpa").value = x.toFixed(3);
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y.toFixed(3) + " %";
+            } else {
+                alert("Kindly Enter The Score\'s In All The Field\'s Specified");
+            }
+
         }
     </script>
 </body>

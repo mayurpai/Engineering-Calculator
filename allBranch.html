@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/style/allBranch.css">
+    <link rel="stylesheet" href="../Engineering-Calculator/style/allBranch.css">
     <title>SGPA | 3Rd & 4Th Semester</title>
 </head>
 
 <body>
     <div class="container">
         <video autoplay loop class="videoback" muted plays-inline>
-            <source src="Background.mp4 " type=video/mp4> </video> <div class="header">
+            <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4> </video> <div class="header">
             <h1>3Rd & 4Th Semester&nbsp;</h1>
     </div>
     <nav>
@@ -259,11 +259,16 @@
             } else {
                 Grade9 = 0;
             }
-            var x = ((Grade1 * 3) + (Grade2 * 4) + (Grade3 * 3) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 3) + (Grade7 *
-                2) + (Grade8 * 2) + (Grade9 * 1)) / 24;
-            document.getElementById("sgpa").value = x.toFixed(3);
-            var y = (x - 0.75) * 10;
-            document.getElementById("perc").value = y.toFixed(3) + " %";
+            if (x) {
+                var x = ((Grade1 * 3) + (Grade2 * 4) + (Grade3 * 3) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 3) + (
+                    Grade7 *
+                    2) + (Grade8 * 2) + (Grade9 * 1)) / 24;
+                document.getElementById("sgpa").value = x.toFixed(3);
+                var y = (x - 0.75) * 10;
+                document.getElementById("perc").value = y.toFixed(3) + " %";
+            } else {
+                alert("Kindly Enter The Score\'s In All The Field\'s Specified");
+            }
         }
     </script>
 </body>
