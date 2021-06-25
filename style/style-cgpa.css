@@ -436,7 +436,7 @@ input::-webkit-input-placeholder {
 
 .note {
     position: fixed;
-    display: grid;
+    display: flex;
     place-items: center;
     text-align: center;
     justify-content: center;
