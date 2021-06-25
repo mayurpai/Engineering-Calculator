@@ -266,6 +266,11 @@
                 document.getElementById("sgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
                 document.getElementById("perc").value = y.toFixed(3) + " %";
+                setTimeout(() => {
+                    if (confirm("Wanna Improve Your Grade?\nVisit \"Tu Phodega\"")) {
+                        location.href = "https://mayurpai.github.io/TuPhodega/index.html"
+                    }
+                }, 1000);
             } else {
                 alert("Kindly Enter The Score\'s In All The Field\'s Specified");
             }
