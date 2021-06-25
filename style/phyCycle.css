@@ -450,3 +450,9 @@ input::-webkit-input-placeholder {
     text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
     font-size: 2rem;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

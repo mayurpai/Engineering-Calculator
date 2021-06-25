@@ -35,35 +35,35 @@
     <div class="semester">
         <div class="sem">
             <label for="Semester">Semester 1 :</label>
-            <input id="1" type="number" min="0" max="10" placeholder="0-10" />
+            <input id="1" type="number" min="1" max="10" placeholder="1-10" />
         </div>
         <div class="sem">
             <label for="Semester">Semester 2 :</label>
-            <input id="2" type="number" min="0" max="10" placeholder="0-10" />
+            <input id="2" type="number" min="1" max="10" placeholder="1-10" />
         </div>
         <div class="sem">
             <label for="Semester">Semester 3 :</label>
-            <input id="3" type="number" min="0" max="10" placeholder="0-10" />
+            <input id="3" type="number" min="1" max="10" placeholder="1-10" />
         </div>
         <div class="sem">
             <label for="Semester">Semester 4 :</label>
-            <input id="4" type="number" min="0" max="10" placeholder="0-10" />
+            <input id="4" type="number" min="1" max="10" placeholder="1-10" />
         </div>
         <div class="sem">
             <label for="Semester">Semester 5 :</label>
-            <input id="5" type="number" min="0" max="10" placeholder="0-10" />
+            <input id="5" type="number" min="1" max="10" placeholder="1-10" />
         </div>
         <div class="sem">
             <label for="Semester">Semester 6 :</label>
-            <input id="6" type="number" min="0" max="10" placeholder="0-10" />
+            <input id="6" type="number" min="1" max="10" placeholder="1-10" />
         </div>
         <div class="sem">
             <label for="Semester">Semester 7 :</label>
-            <input id=7 type="number" min="0" max="10" placeholder="0-10" />
+            <input id=7 type="number" min="1" max="10" placeholder="1-10" />
         </div>
         <div class="sem">
             <label for="Semester">Semester 8 :</label>
-            <input id="8" type="number" min="0" max="10" placeholder="0-10" />
+            <input id="8" type="number" min="1" max="10" placeholder="1-10" />
         </div>
     </div>
     <div class="result">
@@ -113,8 +113,9 @@
             var Subject6 = document.getElementById('6').value;
             var Subject7 = document.getElementById('7').value;
             var Subject8 = document.getElementById('8').value;
-            if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 != 0 &&
-                Subject7 != 0 && Subject8 != 0) {
+            if ((Subject1 > 0 && Subject1 <= 10) && (Subject2 > 0 && Subject2 <= 10) && (Subject3 > 0 && Subject3 <=
+                    10) && (Subject4 > 0 && Subject4 <= 10) && (Subject5 > 0 && Subject5 <= 10) && (Subject6 > 0 &&
+                    Subject6 <= 10) && (Subject7 > 0 && Subject7 <= 10) && (Subject8 > 0 && Subject8 <= 10)) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
                     Number(Subject6) + Number(Subject7) + Number(Subject8)) / 8;
                 document.getElementById("cgpa").value = x.toFixed(3);
@@ -125,8 +126,9 @@
                         location.href = "https://mayurpai.github.io/TuPhodega/index.html"
                     }
                 }, 1000);
-            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 !=
-                0 && Subject7 != 0) {
+            } else if ((Subject1 > 0 && Subject1 <= 10) && (Subject2 > 0 && Subject2 <= 10) && (Subject3 > 0 &&
+                    Subject3 <= 10) && (Subject4 > 0 && Subject4 <= 10) && (Subject5 > 0 && Subject5 <= 10) && (
+                    Subject6 > 0 && Subject6 <= 10) && (Subject7 > 0 && Subject7 <= 10)) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
                     Number(Subject6) + Number(Subject7)) / 7;
                 document.getElementById("cgpa").value = x.toFixed(3);
@@ -137,8 +139,9 @@
                         location.href = "https://mayurpai.github.io/TuPhodega/index.html"
                     }
                 }, 1000);
-            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0 && Subject6 !=
-                0) {
+            } else if ((Subject1 > 0 && Subject1 <= 10) && (Subject2 > 0 && Subject2 <= 10) && (Subject3 > 0 &&
+                    Subject3 <= 10) && (Subject4 > 0 && Subject4 <= 10) && (Subject5 > 0 && Subject5 <= 10) && (
+                    Subject6 > 0 && Subject6 <= 10)) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5) +
                     Number(Subject6)) / 6;
                 document.getElementById("cgpa").value = x.toFixed(3);
@@ -149,7 +152,8 @@
                         location.href = "https://mayurpai.github.io/TuPhodega/index.html"
                     }
                 }, 1000);
-            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0 && Subject5 != 0) {
+            } else if ((Subject1 > 0 && Subject1 <= 10) && (Subject2 > 0 && Subject2 <= 10) && (Subject3 > 0 &&
+                    Subject3 <= 10) && (Subject4 > 0 && Subject4 <= 10) && (Subject5 > 0 && Subject5 <= 10)) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4) + Number(Subject5)) /
                     5;
                 document.getElementById("cgpa").value = x.toFixed(3);
@@ -160,7 +164,8 @@
                         location.href = "https://mayurpai.github.io/TuPhodega/index.html"
                     }
                 }, 1000);
-            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0 && Subject4 != 0) {
+            } else if ((Subject1 > 0 && Subject1 <= 10) && (Subject2 > 0 && Subject2 <= 10) && (Subject3 > 0 &&
+                    Subject3 <= 10) && (Subject4 > 0 && Subject4 <= 10)) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3) + Number(Subject4)) / 4;
                 document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
@@ -170,7 +175,8 @@
                         location.href = "https://mayurpai.github.io/TuPhodega/index.html"
                     }
                 }, 1000);
-            } else if (Subject1 != 0 && Subject2 != 0 && Subject3 != 0) {
+            } else if ((Subject1 > 0 && Subject1 <= 10) && (Subject2 > 0 && Subject2 <= 10) && (Subject3 > 0 &&
+                    Subject3 <= 10)) {
                 var x = (Number(Subject1) + Number(Subject2) + Number(Subject3)) / 3;
                 document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
@@ -180,7 +186,7 @@
                         location.href = "https://mayurpai.github.io/TuPhodega/index.html"
                     }
                 }, 1000);
-            } else if (Subject1 != 0 && Subject2 != 0) {
+            } else if ((Subject1 > 0 && Subject1 <= 10) && (Subject2 > 0 && Subject2 <= 10)) {
                 var x = (Number(Subject1) + Number(Subject2)) / 2;
                 document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
@@ -190,7 +196,7 @@
                         location.href = "https://mayurpai.github.io/TuPhodega/index.html"
                     }
                 }, 1000);
-            } else if (Subject1 != 0) {
+            } else if (Subject1 > 0 && Subject1 <= 10) {
                 var x = Number(Subject1);
                 document.getElementById("cgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
@@ -201,7 +207,7 @@
                     }
                 }, 1000);
             } else {
-                alert("Kindly Enter The Cumulative Grade Points Average (CGPA) Score\'s");
+                alert("Kindly Enter Valid Cumulative Grade Points Average (CGPA) Score\'s");
             }
 
         }
