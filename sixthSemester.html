@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../Engineering-Calculator/style/allBranch.css">
-    <title>SGPA | 5Th Semester</title>
+    <link rel="stylesheet" href="../Engineering-Calculator/style/inSgpa.css">
+    <title>SGPA | 6Th Semester</title>
 </head>
 
 <body>
     <div class="container">
         <video autoplay loop class="videoback" muted plays-inline>
             <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4> </video> <div class="header">
-            <h1>5Th Semester&nbsp;</h1>
+            <h1>6Th Semester&nbsp;</h1>
     </div>
     <nav>
         <ul>
@@ -34,40 +34,36 @@
     </nav>
     <div class="semester">
         <div class="sem">
-            <label for="Semester">18**51 :</label>
+            <label for="Semester">18**61 :</label>
             <input id="1" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18**52 :</label>
+            <label for="Semester">18**62 :</label>
             <input id="2" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18**53 :</label>
+            <label for="Semester">18**63 :</label>
             <input id="3" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18**54 :</label>
+            <label for="Semester">18**64* :</label>
             <input id="4" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18**55 :</label>
+            <label for="Semester">18**65* :</label>
             <input id="5" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18**56 :</label>
+            <label for="Semester">18**L66 :</label>
             <input id="6" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18**L57 :</label>
+            <label for="Semester">18**L67 :</label>
             <input id="7" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18**L58 :</label>
+            <label for="Semester">18****68 :</label>
             <input id="8" type="number" min="0" max="100" placeholder="0-100" required />
-        </div>
-        <div class="sem">
-            <label for="Semester">18CIV59 :</label>
-            <input id="9" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
     </div>
     <div class="result">
@@ -85,7 +81,7 @@
     <div class="footer">
         <p id="by">
             Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
-            <a href="https://sourcerer.io/mayurpai" target="blank"><strong>Mayur Pai</strong></a>
+            <a href="https://mayurpai.github.io/" target="blank"><strong>Mayur Pai</strong></a>
         </p>
         <p id="copy">
             Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020
@@ -95,7 +91,7 @@
                 class="fa fa-facebook fa-2x" id="fb" aria-hidden="true"></i></a>
         <a href="https://twitter.com/Mayur_pai5" title="Mayur_pai5" target="blank"><i class="fa fa-twitter fa-2x"
                 id="twitter" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/mayurpai19/" title="unmatched._.soul" target="blank"><i
+        <a href="https://www.instagram.com/mayurpai19/" title="mayurpai19" target="blank"><i
                 class="fa fa-instagram fa-2x" id="insta" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/in/mayur-pai5/" title="Mayur Pai B H" target="blank"><i
                 class="fa fa-linkedin fa-2x" id="link" aria-hidden="true"></i></a>
@@ -105,7 +101,7 @@
     </div>
     <script>
         function calculate() {
-            var Grade1, Grade2, Grade3, Grade4, Grade5, Grade6, Grade7, Grade8, Grade9;
+            var Grade1, Grade2, Grade3, Grade4, Grade5, Grade6, Grade7, Grade8;
             var Subject1 = document.getElementById('1').value;
             if (Subject1 >= 90) {
                 Grade1 = 10;
@@ -243,24 +239,8 @@
                 Grade8 = 0;
             }
 
-            var Subject9 = document.getElementById('9').value;
-            if (Subject9 >= 90) {
-                Grade9 = 10;
-            } else if (Subject9 >= 80 && Subject9 < 90) {
-                Grade9 = 9;
-            } else if (Subject9 >= 70 && Subject9 < 80) {
-                Grade9 = 8;
-            } else if (Subject9 >= 60 && Subject9 < 70) {
-                Grade9 = 7;
-            } else if (Subject9 >= 45 && Subject9 < 60) {
-                Grade9 = 6;
-            } else if (Subject9 >= 40 && Subject9 < 45) {
-                Grade9 = 4;
-            } else {
-                Grade9 = 0;
-            }
-            var x = ((Grade1 * 3) + (Grade2 * 4) + (Grade3 * 4) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 3) + (Grade7 *
-                2) + (Grade8 * 2) + (Grade9 * 1)) / 25;
+            var x = ((Grade1 * 4) + (Grade2 * 4) + (Grade3 * 4) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 2) + (Grade7 *
+                2) + (Grade8 * 2)) / 24;
             if (x) {
                 document.getElementById("sgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;

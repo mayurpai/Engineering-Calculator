@@ -40,8 +40,8 @@ html {
     }
 
     .holder {
-        height: 40rem;
-        width: 150rem;
+        height: 60rem;
+        width: 120rem;
     }
 }
 
@@ -176,7 +176,7 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 
 a {
@@ -219,7 +219,7 @@ ul a:hover {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 23.5rem;
+    margin-top: 13rem;
     display: flex;
     justify-content: space-evenly;
     place-items: center;
@@ -238,16 +238,20 @@ ul a:hover {
 .sgpa,
 .cgpa,
 .all,
-.alls {
+.forth,
+.alls,
+.sixth,
+.seventh,
+.eighth {
     position: relative;
     border: .2rem solid white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 32rem;
+    height: 25rem;
     transition: 1s all linear;
-    width: 32rem;
+    width: 25rem;
     background-color: rgb(29, 29, 29);
     box-shadow: 2rem 2rem 0rem rgba(255, 255, 255, 0.1);
 }
@@ -255,14 +259,22 @@ ul a:hover {
 .sgpa:hover,
 .cgpa:hover,
 .all:hover,
-.alls:hover {
+.forth:hover,
+.alls:hover,
+.sixth:hover,
+.seventh:hover,
+.eighth:hover {
     box-shadow: none;
 }
 
 .cgpa a h6:hover,
 .all a h6:hover,
+.forth a h6:hover,
 .sgpa a h6:hover,
-.alls a h6:hover {
+.alls a h6:hover,
+.sixth a h6:hover,
+.seventh a h6:hover,
+.eighth a h6:hover {
     transition: 0.5s linear;
     transform: scale(1.025);
     color: whitesmoke;

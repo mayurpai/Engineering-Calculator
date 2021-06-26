@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../Engineering-Calculator/style/inSgpa.css">
-    <title>SGPA | Chemistry Cycle</title>
+    <title>SGPA | 4Th Semester</title>
 </head>
 
 <body>
     <div class="container">
         <video autoplay loop class="videoback" muted plays-inline>
             <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4> </video> <div class="header">
-            <h1>Chemistry&nbsp;&nbsp;Cycle&nbsp;</h1>
+            <h1>4Th Semester&nbsp;</h1>
     </div>
     <nav>
         <ul>
@@ -34,41 +34,45 @@
     </nav>
     <div class="semester">
         <div class="sem">
-            <label for="Semester">18MAT11/21 :</label>
+            <label for="Semester">18MAT41 :</label>
             <input id="1" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18CHE12/22 :</label>
+            <label for="Semester">18**42 :</label>
             <input id="2" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18CPS13/23 :</label>
+            <label for="Semester">18**43 :</label>
             <input id="3" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18ELN14/24 :</label>
+            <label for="Semester">18**44 :</label>
             <input id="4" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18ME15/25 :</label>
+            <label for="Semester">18**45 :</label>
             <input id="5" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18CHEL16/26 :</label>
+            <label for="Semester">18**46 :</label>
             <input id="6" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18CPL17/27 :</label>
+            <label for="Semester">18**L47 :</label>
             <input id="7" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
         <div class="sem">
-            <label for="Semester">18EGH18/28 :</label>
+            <label for="Semester">18**L48 :</label>
             <input id="8" type="number" min="0" max="100" placeholder="0-100" required />
+        </div>
+        <div class="sem">
+            <label for="Semester">18***49 :</label>
+            <input id="9" type="number" min="0" max="100" placeholder="0-100" required />
         </div>
     </div>
     <div class="result">
         <input type="number" name="sgpa" id="sgpa" placeholder="SGPA" readonly />&nbsp;&nbsp;
-        <input type="number " name="perc " id="perc" placeholder="Percentage" readonly />
+        <input id="perc" type="number " name="perc " id="perc" placeholder="Percentage" readonly />
     </div>
     <div class="cal">
         <button onclick="calculate()" class="button1">
@@ -78,7 +82,6 @@
                 <p>Reset</p>
             </button></a>
     </div>
-
     <div class="footer">
         <p id="by">
             Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
@@ -102,7 +105,7 @@
     </div>
     <script>
         function calculate() {
-            var Grade1, Grade2, Grade3, Grade4, Grade5, Grade6, Grade7, Grade8;
+            var Grade1, Grade2, Grade3, Grade4, Grade5, Grade6, Grade7, Grade8, Grade9;
             var Subject1 = document.getElementById('1').value;
             if (Subject1 >= 90) {
                 Grade1 = 10;
@@ -239,8 +242,26 @@
             } else {
                 Grade8 = 0;
             }
-            var x = ((Grade1 * 4) + (Grade2 * 4) + (Grade3 * 3) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 1) + (Grade7 *
-                1) + (Grade8 * 1)) / 20;
+
+            var Subject9 = document.getElementById('9').value;
+            if (Subject9 >= 90) {
+                Grade9 = 10;
+            } else if (Subject9 >= 80 && Subject9 < 90) {
+                Grade9 = 9;
+            } else if (Subject9 >= 70 && Subject9 < 80) {
+                Grade9 = 8;
+            } else if (Subject9 >= 60 && Subject9 < 70) {
+                Grade9 = 7;
+            } else if (Subject9 >= 45 && Subject9 < 60) {
+                Grade9 = 6;
+            } else if (Subject9 >= 40 && Subject9 < 45) {
+                Grade9 = 4;
+            } else {
+                Grade9 = 0;
+            }
+            var x = ((Grade1 * 3) + (Grade2 * 4) + (Grade3 * 3) + (Grade4 * 3) + (Grade5 * 3) + (Grade6 * 3) + (
+                Grade7 *
+                2) + (Grade8 * 2) + (Grade9 * 1)) / 24;
             if (x) {
                 document.getElementById("sgpa").value = x.toFixed(3);
                 var y = (x - 0.75) * 10;
