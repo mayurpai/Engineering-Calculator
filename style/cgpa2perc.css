@@ -23,11 +23,6 @@ html {
     h1 {
         font-size: 8rem;
     }
-
-    .holder {
-        height: 40rem;
-        width: 150rem;
-    }
 }
 
 @media(max-width: 1600px) {
@@ -37,11 +32,6 @@ html {
 
     h1 {
         font-size: 8rem;
-    }
-
-    .holder {
-        height: 40rem;
-        width: 150rem;
     }
 }
 
@@ -53,11 +43,6 @@ html {
     h1 {
         font-size: 8rem;
     }
-
-    .holder {
-        height: 40rem;
-        width: 150rem;
-    }
 }
 
 @media(max-width: 768px) {
@@ -68,11 +53,6 @@ html {
     h1 {
         font-size: 8rem;
     }
-
-    .holder {
-        height: 40rem;
-        width: 150rem;
-    }
 }
 
 @media(max-width: 450px) {
@@ -81,12 +61,7 @@ html {
     }
 
     h1 {
-        font-size: 5.2rem;
-    }
-
-    .holder {
-        height: 80rem;
-        width: 80rem;
+        font-size: 5.25rem;
     }
 }
 
@@ -98,11 +73,6 @@ html {
     h1 {
         font-size: 5rem;
     }
-
-    .holder {
-        height: 80rem;
-        width: 80rem;
-    }
 }
 
 @media(max-width: 320px) {
@@ -113,11 +83,6 @@ html {
     h1 {
         font-size: 4.75rem;
     }
-
-    .holder {
-        height: 80rem;
-        width: 80rem;
-    }
 }
 
 @media(max-width: 280px) {
@@ -127,11 +92,6 @@ html {
 
     h1 {
         font-size: 4.5rem;
-    }
-
-    .holder {
-        height: 80rem;
-        width: 80rem;
     }
 }
 
@@ -197,93 +157,6 @@ ul a:hover {
     text-shadow: none;
 }
 
-.holder {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 23.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    place-items: center;
-}
-
-.sgpa,
-.cgpa,
-.cgpa2perc {
-    position: relative;
-    border: .2rem solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 32rem;
-    transition: 1s all linear;
-    width: 32rem;
-    background-color: rgb(29, 29, 29);
-    box-shadow: 2rem 2rem 0rem rgba(255, 255, 255, 0.1);
-}
-
-/* #bubble {
-    position: relative;
-    height: 32rem;
-    width: 32rem;
-    margin-top: 25rem;
-    margin-right: 0rem;
-    animation: loop linear 1s infinite;
-    display: none;
-}
-
-#bubble1 {
-    position: relative;
-    height: 32rem;
-    width: 32rem;
-    margin-top: 25rem;
-    margin-left: 12rem;
-    animation: loops linear .05s infinite;
-}
-
-@keyframes loop {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes loops {
-    0% {
-        transform: rotate(360deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-} */
-
-.sgpa:hover,
-.cgpa:hover,
-.cgpa2perc:hover {
-    box-shadow: none;
-}
-
-.cgpa a h6:hover,
-.sgpa a h6:hover,
-.cgpa2perc a h6:hover {
-    transition: 0.5s linear;
-    transform: scale(1.05);
-    color: whitesmoke;
-}
-
-h6 {
-    font-family: 'Black Ops One', cursive;
-    font-size: 4.5rem;
-    font-weight: bolder;
-    transition: 1s all linear;
-    color: darkgray;
-    z-index: 5;
-}
 
 .footer {
     position: fixed;
@@ -407,4 +280,165 @@ i {
     height: 100vh;
     object-fit: cover;
     z-index: -100;
+}
+
+.button1 {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.1);
+    /* background-image: linear-gradient(to right, white 0%, grey 100%); */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4.0rem;
+    z-index: 2;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    height: 5rem;
+    width: 18rem;
+}
+
+.button1:hover,
+.button2:hover {
+    background-position: right center;
+    transform: scale(1.05);
+    transition: linear 0.25s;
+    border: .25rem solid whitesmoke;
+}
+
+.button2 {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.1);
+    /* background-image: linear-gradient(to right, white 0%, grey 100%); */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4.0rem;
+    z-index: 2;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    height: 5rem;
+    width: 18rem;
+}
+
+button p {
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    background: transparent;
+    width: auto;
+    display: block;
+    color: #fff;
+    font-family: 'Black Ops One', cursive;
+    padding: .3rem .3rem;
+    text-align: center;
+    transition: all .1s linear;
+}
+
+.sem input {
+    font-size: 3rem;
+    width: 10rem;
+
+}
+
+input:focus,
+input:active,
+select:focus {
+    border-color: transparent;
+    border-bottom: .2rem solid rgba(255, 255, 255, 0.1);
+    box-shadow: 1rem 0rem 0rem rgba(255, 255, 255, 0.15);
+    outline: none;
+}
+
+.semester {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 35rem;
+}
+
+.sem {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: .1rem;
+}
+
+label {
+    height: auto;
+    width: auto;
+    font-family: 'Black Ops One', cursive;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    padding: .5rem 1rem;
+    font-size: 5rem;
+}
+
+.result {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 60rem;
+    overflow: hidden;
+}
+
+#cgpa,
+#perc {
+    font-family: 'Black Ops One', cursive;
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    text-shadow: .5rem .5rem 0 rgba(255, 255, 255, 0.1);
+    padding: .5rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cal {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 64rem;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.result input {
+    border: .25rem solid gray;
+    background: transparent;
+    display: block;
+    font-weight: bold;
+    padding: .3rem .3rem;
+    pointer-events: none;
+    margin: 0 1rem;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
 }
