@@ -100,6 +100,28 @@
     </div>
     <script>
         function calculate() {
+            if (document.getElementById('1').value == "") {
+                alert("Kindly Enter The Score For Subject 1");
+                return;
+            } else if (document.getElementById('2').value == "") {
+                alert("Kindly Enter The Score For Subject 2");
+                return;
+            } else if (document.getElementById('3').value == "") {
+                alert("Kindly Enter The Score For Subject 3");
+                return;
+            } else if (document.getElementById('4').value == "") {
+                alert("Kindly Enter The Score For Subject 4");
+                return;
+            } else if (document.getElementById('5').value == "") {
+                alert("Kindly Enter The Score For Subject 5");
+                return;
+            } else if (document.getElementById('6').value == "") {
+                alert("Kindly Enter The Score For Subject 6");
+                return;
+            } else if (document.getElementById('7').value == "") {
+                alert("Kindly Enter The Score For Subject 7");
+                return;
+            }
             var Grade1, Grade2, Grade3, Grade4, Grade5, Grade6, Grade7;
             var Subject1 = document.getElementById('1').value;
             if (Subject1 >= 90) {
