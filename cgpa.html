@@ -1,365 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="../Engineering-Calculator/style/style-cgpa.css"
-    />
-    <title>CGPA Calculator</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <video autoplay loop class="videoback" muted plays-inline>
-        <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4>
-      </video>
-      <div class="header">
-        <h1>CGPA&nbsp;&nbsp;Calculator&nbsp;</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../Engineering-Calculator/style/style-cgpa.css" />
+  <title>CGPA Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <video autoplay loop class="videoback" muted plays-inline>
+      <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4>
+    </video>
+    <div class="header">
+      <h1>CGPA&nbsp;&nbsp;Calculator&nbsp;</h1>
+    </div>
+    <nav>
+      <ul>
+        <a href="index.html">
+          <li>Home&nbsp;</li>
+        </a>
+        <a href="sgpa.html">
+          <li>SGPA Calculator&nbsp;</li>
+        </a>
+        <a href="cgpa.html">
+          <li>CGPA Calculator&nbsp;</li>
+        </a>
+        <a href="cgpa2perc.html">
+          <li>CGPA Percentage&nbsp;</li>
+        </a>
+      </ul>
+    </nav>
+    <div class="semester">
+      <div class="sem">
+        <label for="Semester">Semester 1 :</label>
+        <input id="1" type="number" min="1" max="10" placeholder="1-10" />
       </div>
-      <nav>
-        <ul>
-          <a href="index.html">
-            <li>Home&nbsp;</li>
-          </a>
-          <a href="sgpa.html">
-            <li>SGPA Calculator&nbsp;</li>
-          </a>
-          <a href="cgpa.html">
-            <li>CGPA Calculator&nbsp;</li>
-          </a>
-          <a href="cgpa2perc.html">
-            <li>CGPA Percentage&nbsp;</li>
-          </a>
-        </ul>
-      </nav>
-      <div class="semester">
-        <div class="sem">
-          <label for="Semester">Semester 1 :</label>
-          <input id="1" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
-        <div class="sem">
-          <label for="Semester">Semester 2 :</label>
-          <input id="2" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
-        <div class="sem">
-          <label for="Semester">Semester 3 :</label>
-          <input id="3" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
-        <div class="sem">
-          <label for="Semester">Semester 4 :</label>
-          <input id="4" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
-        <div class="sem">
-          <label for="Semester">Semester 5 :</label>
-          <input id="5" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
-        <div class="sem">
-          <label for="Semester">Semester 6 :</label>
-          <input id="6" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
-        <div class="sem">
-          <label for="Semester">Semester 7 :</label>
-          <input id="7" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
-        <div class="sem">
-          <label for="Semester">Semester 8 :</label>
-          <input id="8" type="number" min="1" max="10" placeholder="1-10" />
-        </div>
+      <div class="sem">
+        <label for="Semester">Semester 2 :</label>
+        <input id="2" type="number" min="1" max="10" placeholder="1-10" />
       </div>
-      <div class="result">
-        <input
-          id="cgpa"
-          type="number"
-          name="cgpa"
-          id="cgpa"
-          placeholder="CGPA"
-          readonly
-        />&nbsp;&nbsp;
-        <input
-          id="perc"
-          type="number "
-          name="perc "
-          id="perc"
-          placeholder="Percentage"
-          readonly
-        />
+      <div class="sem">
+        <label for="Semester">Semester 3 :</label>
+        <input id="3" type="number" min="1" max="10" placeholder="1-10" />
       </div>
-      <div class="cal">
-        <button onclick="calculate()" class="button1">
-          <p id="a">Calculate</p>
-        </button>
-        <a href=""
-          ><button class="button2">
-            <p>Reset</p>
-          </button></a
-        >
+      <div class="sem">
+        <label for="Semester">Semester 4 :</label>
+        <input id="4" type="number" min="1" max="10" placeholder="1-10" />
       </div>
-      <div class="note">
-        <p>Note: Leave the fields of semesters not completed as it is.</p>
+      <div class="sem">
+        <label for="Semester">Semester 5 :</label>
+        <input id="5" type="number" min="1" max="10" placeholder="1-10" />
       </div>
-      <div class="footer">
-        <p id="by">
-          Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
-          <a href="https://mayurpai.github.io/" target="blank"
-            ><strong>Mayur Pai</strong></a
-          >
-        </p>
-        <p id="copy">
-          Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020
-        </p>
-        <a href="tel:961-160-9185"
-          ><i class="fa fa-whatsapp fa-2x" id="whatsapp" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100010154376824"
-          title="Mayur Pai"
-          target="blank"
-          ><i class="fa fa-facebook fa-2x" id="fb" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://twitter.com/Mayur_pai5"
-          title="Mayur_pai5"
-          target="blank"
-          ><i class="fa fa-twitter fa-2x" id="twitter" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/mayurpai19/"
-          title="mayurpai19"
-          target="blank"
-          ><i class="fa fa-instagram fa-2x" id="insta" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/mayur-pai5/"
-          title="Mayur Pai B H"
-          target="blank"
-          ><i class="fa fa-linkedin fa-2x" id="link" aria-hidden="true"></i
-        ></a>
-        <a href="https://github.com/mayurpai" title="Mayur Pai" target="blank"
-          ><i class="fa fa-github fa-2x" id="git" aria-hidden="true"></i
-        ></a>
+      <div class="sem">
+        <label for="Semester">Semester 6 :</label>
+        <input id="6" type="number" min="1" max="10" placeholder="1-10" />
+      </div>
+      <div class="sem">
+        <label for="Semester">Semester 7 :</label>
+        <input id="7" type="number" min="1" max="10" placeholder="1-10" />
+      </div>
+      <div class="sem">
+        <label for="Semester">Semester 8 :</label>
+        <input id="8" type="number" min="1" max="10" placeholder="1-10" />
       </div>
     </div>
-    <script>
-      function calculate() {
-        var Subject1 = document.getElementById("1").value;
-        var Subject2 = document.getElementById("2").value;
-        var Subject3 = document.getElementById("3").value;
-        var Subject4 = document.getElementById("4").value;
-        var Subject5 = document.getElementById("5").value;
-        var Subject6 = document.getElementById("6").value;
-        var Subject7 = document.getElementById("7").value;
-        var Subject8 = document.getElementById("8").value;
-        if (
-          Subject1 > 0 &&
-          Subject1 <= 10 &&
-          Subject2 > 0 &&
-          Subject2 <= 10 &&
-          Subject3 > 0 &&
-          Subject3 <= 10 &&
-          Subject4 > 0 &&
-          Subject4 <= 10 &&
-          Subject5 > 0 &&
-          Subject5 <= 10 &&
-          Subject6 > 0 &&
-          Subject6 <= 10 &&
-          Subject7 > 0 &&
-          Subject7 <= 10 &&
-          Subject8 > 0 &&
-          Subject8 <= 10
-        ) {
-          var x =
-            (Number(Subject1) +
-              Number(Subject2) +
-              Number(Subject3) +
-              Number(Subject4) +
-              Number(Subject5) +
-              Number(Subject6) +
-              Number(Subject7) +
-              Number(Subject8)) /
-            8;
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else if (
-          Subject1 > 0 &&
-          Subject1 <= 10 &&
-          Subject2 > 0 &&
-          Subject2 <= 10 &&
-          Subject3 > 0 &&
-          Subject3 <= 10 &&
-          Subject4 > 0 &&
-          Subject4 <= 10 &&
-          Subject5 > 0 &&
-          Subject5 <= 10 &&
-          Subject6 > 0 &&
-          Subject6 <= 10 &&
-          Subject7 > 0 &&
-          Subject7 <= 10
-        ) {
-          var x =
-            (Number(Subject1) +
-              Number(Subject2) +
-              Number(Subject3) +
-              Number(Subject4) +
-              Number(Subject5) +
-              Number(Subject6) +
-              Number(Subject7)) /
-            7;
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else if (
-          Subject1 > 0 &&
-          Subject1 <= 10 &&
-          Subject2 > 0 &&
-          Subject2 <= 10 &&
-          Subject3 > 0 &&
-          Subject3 <= 10 &&
-          Subject4 > 0 &&
-          Subject4 <= 10 &&
-          Subject5 > 0 &&
-          Subject5 <= 10 &&
-          Subject6 > 0 &&
-          Subject6 <= 10
-        ) {
-          var x =
-            (Number(Subject1) +
-              Number(Subject2) +
-              Number(Subject3) +
-              Number(Subject4) +
-              Number(Subject5) +
-              Number(Subject6)) /
-            6;
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else if (
-          Subject1 > 0 &&
-          Subject1 <= 10 &&
-          Subject2 > 0 &&
-          Subject2 <= 10 &&
-          Subject3 > 0 &&
-          Subject3 <= 10 &&
-          Subject4 > 0 &&
-          Subject4 <= 10 &&
-          Subject5 > 0 &&
-          Subject5 <= 10
-        ) {
-          var x =
-            (Number(Subject1) +
-              Number(Subject2) +
-              Number(Subject3) +
-              Number(Subject4) +
-              Number(Subject5)) /
-            5;
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else if (
-          Subject1 > 0 &&
-          Subject1 <= 10 &&
-          Subject2 > 0 &&
-          Subject2 <= 10 &&
-          Subject3 > 0 &&
-          Subject3 <= 10 &&
-          Subject4 > 0 &&
-          Subject4 <= 10
-        ) {
-          var x =
-            (Number(Subject1) +
-              Number(Subject2) +
-              Number(Subject3) +
-              Number(Subject4)) /
-            4;
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else if (
-          Subject1 > 0 &&
-          Subject1 <= 10 &&
-          Subject2 > 0 &&
-          Subject2 <= 10 &&
-          Subject3 > 0 &&
-          Subject3 <= 10
-        ) {
-          var x = (Number(Subject1) + Number(Subject2) + Number(Subject3)) / 3;
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else if (
-          Subject1 > 0 &&
-          Subject1 <= 10 &&
-          Subject2 > 0 &&
-          Subject2 <= 10
-        ) {
-          var x = (Number(Subject1) + Number(Subject2)) / 2;
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else if (Subject1 > 0 && Subject1 <= 10) {
-          var x = Number(Subject1);
-          document.getElementById("cgpa").value = x.toFixed(2);
-          var y = (x - 0.75) * 10;
-          document.getElementById("perc").value = y.toFixed(2) + " %";
-          setTimeout(() => {
-            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
-              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
-            }
-          }, 1000);
-        } else {
-          alert(
-            "Kindly Enter Valid Cumulative Grade Performance Average (CGPA) Score's"
-          );
-        }
+    <div class="result">
+      <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
+      <input id="perc" type="number " name="perc " id="perc" placeholder="Percentage" readonly />
+    </div>
+    <div class="cal">
+      <button onclick="calculate()" class="button1">
+        <p id="a">Calculate</p>
+      </button>
+      <a href="">
+        <button class="button2">
+          <p>Reset</p>
+        </button>
+      </a>
+    </div>
+    <div class="note">
+      <p>Note: Leave the fields of semesters not completed as it is.</p>
+    </div>
+    <div class="footer">
+      <p id="by">
+        Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
+        <a href="https://mayurpai.github.io/" target="blank"><strong>Mayur Pai</strong></a>
+      </p>
+      <p id="copy">
+        Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020
+      </p>
+      <a href="tel:961-160-9185"><i class="fa fa-whatsapp fa-2x" id="whatsapp" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100010154376824" title="Mayur Pai" target="blank"><i
+          class="fa fa-facebook fa-2x" id="fb" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/Mayur_pai5" title="Mayur_pai5" target="blank"><i class="fa fa-twitter fa-2x"
+          id="twitter" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/mayurpai19/" title="mayurpai19" target="blank"><i class="fa fa-instagram fa-2x"
+          id="insta" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/mayur-pai5/" title="Mayur Pai B H" target="blank"><i
+          class="fa fa-linkedin fa-2x" id="link" aria-hidden="true"></i></a>
+      <a href="https://github.com/mayurpai" title="Mayur Pai" target="blank"><i class="fa fa-github fa-2x" id="git"
+          aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <script>
+    function calculate() {
+      var Credit1 = 20,
+        Credit2 = 20,
+        Credit3 = 24,
+        Credit4 = 24,
+        Credit5 = 25,
+        Credit6 = 24,
+        Credit7 = 20,
+        Credit8 = 18;
+      var Subject1 = document.getElementById("1").value;
+      var Subject2 = document.getElementById("2").value;
+      var Subject3 = document.getElementById("3").value;
+      var Subject4 = document.getElementById("4").value;
+      var Subject5 = document.getElementById("5").value;
+      var Subject6 = document.getElementById("6").value;
+      var Subject7 = document.getElementById("7").value;
+      var Subject8 = document.getElementById("8").value;
+      if (
+        Subject1 > 0 &&
+        Subject1 <= 10 &&
+        Subject2 > 0 &&
+        Subject2 <= 10 &&
+        Subject3 > 0 &&
+        Subject3 <= 10 &&
+        Subject4 > 0 &&
+        Subject4 <= 10 &&
+        Subject5 > 0 &&
+        Subject5 <= 10 &&
+        Subject6 > 0 &&
+        Subject6 <= 10 &&
+        Subject7 > 0 &&
+        Subject7 <= 10 &&
+        Subject8 > 0 &&
+        Subject8 <= 10
+      ) {
+        var x =
+          (Number(Subject1) * Number(Credit1) +
+            Number(Subject2) * Number(Credit2) +
+            Number(Subject3) * Number(Credit3) +
+            Number(Subject4) * Number(Credit4) +
+            Number(Subject5) * Number(Credit5) +
+            Number(Subject6) * Number(Credit6) +
+            Number(Subject7) * Number(Credit7) +
+            Number(Subject8) * Number(Credit8)) /
+          (Credit1 +
+            Credit2 +
+            Credit3 +
+            Credit4 +
+            Credit5 +
+            Credit6 +
+            Credit7 +
+            Credit8);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else if (
+        Subject1 > 0 &&
+        Subject1 <= 10 &&
+        Subject2 > 0 &&
+        Subject2 <= 10 &&
+        Subject3 > 0 &&
+        Subject3 <= 10 &&
+        Subject4 > 0 &&
+        Subject4 <= 10 &&
+        Subject5 > 0 &&
+        Subject5 <= 10 &&
+        Subject6 > 0 &&
+        Subject6 <= 10 &&
+        Subject7 > 0 &&
+        Subject7 <= 10
+      ) {
+        var x =
+          (Number(Subject1) * Number(Credit1) +
+            Number(Subject2) * Number(Credit2) +
+            Number(Subject3) * Number(Credit3) +
+            Number(Subject4) * Number(Credit4) +
+            Number(Subject5) * Number(Credit5) +
+            Number(Subject6) * Number(Credit6) +
+            Number(Subject7) * Number(Credit7)) /
+          (Credit1 +
+            Credit2 +
+            Credit3 +
+            Credit4 +
+            Credit5 +
+            Credit6 +
+            Credit7);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else if (
+        Subject1 > 0 &&
+        Subject1 <= 10 &&
+        Subject2 > 0 &&
+        Subject2 <= 10 &&
+        Subject3 > 0 &&
+        Subject3 <= 10 &&
+        Subject4 > 0 &&
+        Subject4 <= 10 &&
+        Subject5 > 0 &&
+        Subject5 <= 10 &&
+        Subject6 > 0 &&
+        Subject6 <= 10
+      ) {
+        var x =
+          (Number(Subject1) * Number(Credit1) +
+            Number(Subject2) * Number(Credit2) +
+            Number(Subject3) * Number(Credit3) +
+            Number(Subject4) * Number(Credit4) +
+            Number(Subject5) * Number(Credit5) +
+            Number(Subject6) * Number(Credit6)) /
+          (Credit1 +
+            Credit2 +
+            Credit3 +
+            Credit4 +
+            Credit5 +
+            Credit6);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else if (
+        Subject1 > 0 &&
+        Subject1 <= 10 &&
+        Subject2 > 0 &&
+        Subject2 <= 10 &&
+        Subject3 > 0 &&
+        Subject3 <= 10 &&
+        Subject4 > 0 &&
+        Subject4 <= 10 &&
+        Subject5 > 0 &&
+        Subject5 <= 10
+      ) {
+        var x =
+          (Number(Subject1) * Number(Credit1) +
+            Number(Subject2) * Number(Credit2) +
+            Number(Subject3) * Number(Credit3) +
+            Number(Subject4) * Number(Credit4) +
+            Number(Subject5) * Number(Credit5)) /
+          (Credit1 +
+            Credit2 +
+            Credit3 +
+            Credit4 +
+            Credit5);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else if (
+        Subject1 > 0 &&
+        Subject1 <= 10 &&
+        Subject2 > 0 &&
+        Subject2 <= 10 &&
+        Subject3 > 0 &&
+        Subject3 <= 10 &&
+        Subject4 > 0 &&
+        Subject4 <= 10
+      ) {
+        var x =
+          (Number(Subject1) * Number(Credit1) +
+            Number(Subject2) * Number(Credit2) +
+            Number(Subject3) * Number(Credit3) +
+            Number(Subject4) * Number(Credit4)) /
+          (Credit1 +
+            Credit2 +
+            Credit3 +
+            Credit4);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else if (
+        Subject1 > 0 &&
+        Subject1 <= 10 &&
+        Subject2 > 0 &&
+        Subject2 <= 10 &&
+        Subject3 > 0 &&
+        Subject3 <= 10
+      ) {
+        var x = (Number(Subject1) * Number(Credit1) +
+          Number(Subject2) * Number(Credit2) +
+          Number(Subject3) * Number(Credit3)) /
+          (Credit1 +
+            Credit2 +
+            Credit3);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else if (
+        Subject1 > 0 &&
+        Subject1 <= 10 &&
+        Subject2 > 0 &&
+        Subject2 <= 10
+      ) {
+        var x = (Number(Subject1) * Number(Credit1) +
+          Number(Subject2) * Number(Credit2)) /
+          (Credit1 +
+            Credit2);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else if (Subject1 > 0 && Subject1 <= 10) {
+        var x = (Number(Subject1) * Number(Credit1)) /
+          (Credit1);
+        document.getElementById("cgpa").value = x.toFixed(2);
+        var y = (x - 0.75) * 10;
+        document.getElementById("perc").value = y.toFixed(2) + " %";
+        setTimeout(() => {
+          if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+            location.href = "https://mayurpai.github.io/TuPhodega/index.html";
+          }
+        }, 1000);
+      } else {
+        alert(
+          "Kindly Enter Valid Cumulative Grade Performance Average (CGPA) Score's"
+        );
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
