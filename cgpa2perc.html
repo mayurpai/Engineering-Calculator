@@ -1,98 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../Engineering-Calculator/style/cgpa2perc.css">
+    <link
+      rel="stylesheet"
+      href="../Engineering-Calculator/style/cgpa2perc.css"
+    />
     <title>Percentage Calculator</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <video autoplay loop class="videoback" muted plays-inline>
-            <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4> </video> <div class="header">
-            <h1>Percentage&nbsp;&nbsp;Calculator&nbsp;</h1>
-    </div>
-    <nav>
+      <video autoplay loop class="videoback" muted plays-inline>
+        <source src="../Engineering-Calculator/Background.mp4 " type=video/mp4>
+      </video>
+      <div class="header">
+        <h1>Percentage&nbsp;&nbsp;Calculator&nbsp;</h1>
+      </div>
+      <nav>
         <ul>
-            <a href="index.html">
-                <li>Home&nbsp;</li>
-            </a>
-            <a href="sgpa.html">
-                <li>SGPA Calculator&nbsp;</li>
-            </a>
-            <a href="cgpa.html">
-                <li>CGPA Calculator&nbsp;</li>
-            </a>
-            <a href="cgpa2perc.html">
-                <li>CGPA Percentage&nbsp;</li>
-            </a>
+          <a href="index.html">
+            <li>Home&nbsp;</li>
+          </a>
+          <a href="sgpa.html">
+            <li>SGPA Calculator&nbsp;</li>
+          </a>
+          <a href="cgpa.html">
+            <li>CGPA Calculator&nbsp;</li>
+          </a>
+          <a href="cgpa2perc.html">
+            <li>CGPA Percentage&nbsp;</li>
+          </a>
         </ul>
-    </nav>
-    <div class="semester">
+      </nav>
+      <div class="semester">
         <div class="sem">
-            <label for="Semester">CGPA / SGPA</label>
-            <input id="1" type="number" min="1" max="10" placeholder="1-10" />
+          <label for="Semester">CGPA / SGPA</label>
+          <input id="1" type="number" min="1" max="10" placeholder="1-10" />
         </div>
-    </div>
-    <div class="result">
-        <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
-        <input id="perc" type="number " name="perc " id="perc" placeholder="Percentage" readonly />
-    </div>
-    <div class="cal">
+      </div>
+      <div class="result">
+        <input
+          id="cgpa"
+          type="number"
+          name="cgpa"
+          id="cgpa"
+          placeholder="CGPA"
+          readonly
+        />&nbsp;&nbsp;
+        <input
+          id="perc"
+          type="number "
+          name="perc "
+          id="perc"
+          placeholder="Percentage"
+          readonly
+        />
+      </div>
+      <div class="cal">
         <button onclick="calculate()" class="button1">
-            <p id="a">Calculate</p>
+          <p id="a">Calculate</p>
         </button>
-        <a href=""><button class="button2">
-                <p>Reset</p>
-            </button></a>
-    </div>
-    <div class="footer">
+        <a href=""
+          ><button class="button2">
+            <p>Reset</p>
+          </button></a
+        >
+      </div>
+      <div class="footer">
         <p id="by">
-            Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
-            <a href="https://mayurpai.github.io/" target="blank"><strong>Mayur Pai</strong></a>
+          Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
+          <a href="https://mayurpai.github.io/" target="blank"
+            ><strong>Mayur Pai</strong></a
+          >
         </p>
         <p id="copy">
-            Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020
+          Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020
         </p>
-        <a href="tel:961-160-9185"><i class="fa fa-whatsapp fa-2x" id="whatsapp" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100010154376824" title="Mayur Pai" target="blank"><i
-                class="fa fa-facebook fa-2x" id="fb" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/Mayur_pai5" title="Mayur_pai5" target="blank"><i class="fa fa-twitter fa-2x"
-                id="twitter" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/mayurpai19/" title="mayurpai19" target="blank"><i
-                class="fa fa-instagram fa-2x" id="insta" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/mayur-pai5/" title="Mayur Pai B H" target="blank"><i
-                class="fa fa-linkedin fa-2x" id="link" aria-hidden="true"></i></a>
-        <a href="https://github.com/mayurpai" title="Mayur Pai" target="blank"><i class="fa fa-github fa-2x" id="git"
-                aria-hidden="true"></i></a>
-    </div>
+        <a href="tel:961-160-9185"
+          ><i class="fa fa-whatsapp fa-2x" id="whatsapp" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100010154376824"
+          title="Mayur Pai"
+          target="blank"
+          ><i class="fa fa-facebook fa-2x" id="fb" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://twitter.com/Mayur_pai5"
+          title="Mayur_pai5"
+          target="blank"
+          ><i class="fa fa-twitter fa-2x" id="twitter" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/mayurpai19/"
+          title="mayurpai19"
+          target="blank"
+          ><i class="fa fa-instagram fa-2x" id="insta" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/mayur-pai5/"
+          title="Mayur Pai B H"
+          target="blank"
+          ><i class="fa fa-linkedin fa-2x" id="link" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/mayurpai" title="Mayur Pai" target="blank"
+          ><i class="fa fa-github fa-2x" id="git" aria-hidden="true"></i
+        ></a>
+      </div>
     </div>
     <script>
-        function calculate() {
-            var Subject1 = document.getElementById('1').value;
-            if (Subject1 > 0 && Subject1 <= 10) {
-                var x = Number(Subject1);
-                document.getElementById("cgpa").value = x.toFixed(3);
-                var y = (x - 0.75) * 10;
-                document.getElementById("perc").value = y.toFixed(3) + " %";
-                setTimeout(() => {
-                    if (confirm("Wanna Improve Your Grade?\nVisit \"Tu Phodega\"")) {
-                        location.href = "https://mayurpai.github.io/TuPhodega/index.html"
-                    }
-                }, 1000);
-            } else {
-                alert("Kindly Enter Valid Cumulative/Semester Grade Performance Average (CGPA / SGPA) Score");
+      function calculate() {
+        var Subject1 = document.getElementById("1").value;
+        if (Subject1 > 0 && Subject1 <= 10) {
+          var x = Number(Subject1);
+          document.getElementById("cgpa").value = x.toFixed(2);
+          var y = (x - 0.75) * 10;
+          document.getElementById("perc").value = y.toFixed(2) + " %";
+          setTimeout(() => {
+            if (confirm('Wanna Improve Your Grade?\nVisit "Tu Phodega"')) {
+              location.href = "https://mayurpai.github.io/TuPhodega/index.html";
             }
-
+          }, 1000);
+        } else {
+          alert(
+            "Kindly Enter Valid Cumulative/Semester Grade Performance Average (CGPA / SGPA) Score"
+          );
         }
+      }
     </script>
-</body>
-
+  </body>
 </html>
