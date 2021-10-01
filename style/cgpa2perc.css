@@ -353,7 +353,12 @@ input {
 .sem input {
     font-size: 3rem;
     width: 10rem;
+}
 
+.sem p {
+    font-family: 'Black Ops One', cursive;
+    font-size: 2rem;
+    color: #fff;
 }
 
 input:focus,
