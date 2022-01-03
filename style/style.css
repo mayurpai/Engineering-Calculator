@@ -154,17 +154,22 @@ html {
 }
 
 h1 {
-    font-family: 'Black Ops One', cursive;
-    color: darkgray;
+    /* font-family: 'Black Ops One', cursive; */
+    /* font-family: 'Major Mono Display', monospace; */
+    font-family: 'New Rocker', cursive;
+    color: rgb(17,17,17);
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    text-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.1);
+    /* letter-spacing: 0.5rem; */
+    /* text-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.); */
+    text-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.05),
+    1.5rem 2.5rem 15rem rgba(0, 0, 0, 0.05),
+    1.5rem 2rem 2rem rgba(0, 0, 0, 0.05),
+    inset -15rem -15rem 1.5rem rgba(255, 255, 255, 0.9);
 }
 
 a {
     text-decoration: none;
-    text-decoration: none;
-    color: white;
+    color: rgb(17,17,17);
 }
 
 
@@ -182,17 +187,18 @@ ul {
 ul a {
     text-decoration: none;
     list-style: none;
-    color: whitesmoke;
+    color: rgb(17,17,17);
     margin: 2.5rem 1.5rem;
-    font-family: 'Black Ops One', cursive;
-    font-size: 2rem;
+    /* font-family: 'Black Ops One', cursive; */
+    font-family: 'New Rocker', cursive;
+    font-size: 2.5rem;
     font-weight: bolder;
-    transition: 1s all linear;
+    transition: .1s all linear;
     text-shadow: .5rem .5rem 0rem rgba(255, 255, 255, 0.1);
 }
 
 ul a:hover {
-    border-bottom: .1rem solid darkgray;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.1);
     transform: scale(1.1);
     text-shadow: none;
 }
@@ -210,7 +216,7 @@ ul a:hover {
 .sgpa,
 .cgpa,
 .cgpa2perc {
-    position: relative;
+    /* position: relative;
     border: .2rem solid white;
     border-radius: 50%;
     display: flex;
@@ -220,7 +226,46 @@ ul a:hover {
     transition: 1s all linear;
     width: 32rem;
     background-color: rgb(29, 29, 29);
-    box-shadow: 2rem 2rem 0rem rgba(255, 255, 255, 0.1);
+    box-shadow: 2rem 2rem 0rem rgba(255, 255, 255, 0.1); */
+
+    position: relative;
+    width: 32rem;
+    height: 32rem;
+    box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
+    2rem 2.5rem 15rem rgba(0, 0, 0, 0.15),
+    2rem 2rem 2rem rgba(0, 0, 0, 0.15),
+    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .25s all linear;
+}
+
+.sgpa::before,
+.cgpa::before,
+.cgpa2perc::before {
+    content: '';
+    position: absolute;
+    top: 6.5rem;
+    left: 6.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sgpa::after,
+.cgpa::after,
+.cgpa2perc::after {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    left: 11.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* #bubble {
@@ -265,7 +310,11 @@ ul a:hover {
 .sgpa:hover,
 .cgpa:hover,
 .cgpa2perc:hover {
-    box-shadow: none;
+    transform: scale(1.1);
+    box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
+    2.5rem 2.5rem 15rem rgba(0, 0, 0, 0.15),
+    2.5rem 2rem 2rem rgba(0, 0, 0, 0.15),
+    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
 }
 
 .cgpa a h6:hover,
@@ -273,15 +322,15 @@ ul a:hover {
 .cgpa2perc a h6:hover {
     transition: 0.5s linear;
     transform: scale(1.05);
-    color: whitesmoke;
 }
 
 h6 {
-    font-family: 'Black Ops One', cursive;
-    font-size: 4.5rem;
+    /* font-family: 'Black Ops One', cursive; */
+    font-family: 'New Rocker', cursive;
+    font-size: 5rem;
     font-weight: bolder;
     transition: 1s all linear;
-    color: darkgray;
+    color: rgb(17,17,17);
     z-index: 5;
 }
 
@@ -294,11 +343,12 @@ h6 {
 }
 
 #copy {
-    color: darkgray;
+    color: rgb(17,17,17);
     position: absolute;
     background-color: transparent;
     text-align: center;
     letter-spacing: 0rem;
+    font-family: 'New Rocker', cursive;
     font-size: 1.5rem;
     margin-top: 2.5rem;
     left: 50%;
@@ -306,9 +356,10 @@ h6 {
 }
 
 #by {
-    color: darkgray;
+    color: rgb(17,17,17);
     position: absolute;
     background-color: transparent;
+    font-family: 'New Rocker', cursive;
     letter-spacing: 0;
     font-size: 1.5rem;
     margin-top: 2.5rem;
@@ -321,7 +372,7 @@ i {
 
 #fb {
     position: absolute;
-    color: darkgray;
+    color: rgb(17,17,17);
     margin-top: 2.5rem;
     margin-right: 5rem;
     font-size: 3rem;
@@ -330,20 +381,20 @@ i {
 
 #whatsapp {
     position: absolute;
-    color: darkgray;
+    color: rgb(17,17,17);
     margin-top: 2.5rem;
     margin-right: 5rem;
     font-size: 3rem;
     right: 18rem;
 }
 
-#whatsapp:hover {
+/* #whatsapp:hover {
     color: #25D366;
-}
+} */
 
 #git {
     position: absolute;
-    color: darkgray;
+    color: rgb(17,17,17);
     margin-top: 2.5rem;
     margin-right: 4rem;
     font-size: 3rem;
@@ -352,7 +403,7 @@ i {
 
 #twitter {
     position: absolute;
-    color: darkgray;
+    color: rgb(17,17,17);
     margin-top: 2.5rem;
     margin-right: 3rem;
     font-size: 3rem;
@@ -361,7 +412,7 @@ i {
 
 #insta {
     position: absolute;
-    color: darkgray;
+    color: rgb(17,17,17);
     margin-top: 2.5rem;
     margin-right: 2rem;
     font-size: 3rem;
@@ -370,14 +421,14 @@ i {
 
 #link {
     position: absolute;
-    color: darkgray;
+    color: rgb(17,17,17);
     margin-top: 2.5rem;
     margin-right: 1rem;
     font-size: 3rem;
     right: 1rem;
 }
 
-#fb:hover {
+/* #fb:hover {
     color: #1877f2;
 }
 
@@ -395,7 +446,7 @@ i {
 
 #insta:hover {
     color: #c32aa3;
-}
+} */
 
 .videoback {
     position: fixed;
