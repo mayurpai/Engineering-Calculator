@@ -23,6 +23,10 @@ html {
   h1 {
     font-size: 8rem;
   }
+
+  .footer {
+    top: 69.3rem;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -32,6 +36,10 @@ html {
 
   h1 {
     font-size: 8rem;
+  }
+
+  .footer {
+    top: 69.3rem;
   }
 }
 
@@ -43,6 +51,10 @@ html {
   h1 {
     font-size: 8rem;
   }
+
+  .footer {
+    top: 73rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -52,6 +64,10 @@ html {
 
   h1 {
     font-size: 8rem;
+  }
+
+  .footer {
+    top: 127rem;
   }
 }
 
@@ -63,6 +79,10 @@ html {
   h1 {
     font-size: 5.25rem;
   }
+
+  .footer {
+    top: 122rem;
+  }
 }
 
 @media (max-width: 390px) {
@@ -72,6 +92,10 @@ html {
 
   h1 {
     font-size: 5rem;
+  }
+
+  .footer {
+    top: 122rem;
   }
 }
 
@@ -158,10 +182,10 @@ ul a:hover {
 
 .footer {
   position: fixed;
-  bottom: 5rem;
-  height: 6.5rem;
+  margin-bottom: 2.5rem;
+  height: 7rem;
   width: 100vw;
-  overflow: hidden;
+  background-color: transparent;
 }
 
 #copy {
@@ -170,6 +194,7 @@ ul a:hover {
   background-color: transparent;
   text-align: center;
   letter-spacing: 0rem;
+  font-family: 'New Rocker', cursive;
   font-size: 1.5rem;
   margin-top: 2.5rem;
   left: 50%;
@@ -180,6 +205,7 @@ ul a:hover {
   color: rgb(17, 17, 17);
   position: absolute;
   background-color: transparent;
+  font-family: 'New Rocker', cursive;
   letter-spacing: 0;
   font-size: 1.5rem;
   margin-top: 2.5rem;

@@ -28,6 +28,10 @@ html {
         height: 40rem;
         width: 150rem;
     }
+
+    .footer {
+        top: 69.3rem;
+    }
 }
 
 @media(max-width: 1600px) {
@@ -42,6 +46,10 @@ html {
     .holder {
         height: 40rem;
         width: 150rem;
+    }
+
+    .footer {
+        top: 69.3rem;
     }
 }
 
@@ -58,6 +66,10 @@ html {
         height: 40rem;
         width: 150rem;
     }
+
+    .footer {
+        top: 73rem;
+    }
 }
 
 @media(max-width: 768px) {
@@ -72,6 +84,10 @@ html {
     .holder {
         height: 40rem;
         width: 150rem;
+    }
+
+    .footer {
+        top: 127rem;
     }
 }
 
@@ -88,6 +104,10 @@ html {
         height: 80rem;
         width: 80rem;
     }
+
+    .footer {
+        top: 122rem;
+    }
 }
 
 @media(max-width: 390px) {
@@ -102,6 +122,10 @@ html {
     .holder {
         height: 80rem;
         width: 80rem;
+    }
+
+    .footer {
+        top: 122rem;
     }
 }
 
@@ -336,10 +360,10 @@ h6 {
 
 .footer {
     position: fixed;
-    bottom: 5rem;
-    height: 6.5rem;
+    margin-bottom: 2.5rem;
+    height: 7rem;
     width: 100vw;
-    overflow: hidden;
+    background-color: transparent;
 }
 
 #copy {
