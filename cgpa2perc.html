@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
   <link rel="icon" href="images/m_icon1.ico" type="image/x-icon" />
   <link rel="stylesheet" href="../Engineering-Calculator/style/cgpa2perc.css" />
   <title>Percentage Calculator</title>
@@ -44,11 +44,11 @@
     </div>
   </div>
   <div class="result">
-    <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="CGPA" readonly />&nbsp;&nbsp;
-    <input id="perc" type="number " name="perc " id="perc" placeholder="Percentage" readonly />
+    <input id="cgpa" type="number" name="cgpa" id="cgpa" placeholder="🎓 CGPA Secured" readonly />&nbsp;&nbsp;
+    <input id="perc" type="number " name="perc " id="perc" placeholder="🎓 Percentage Secured" readonly />
   </div>
   <div class="cal">
-    <button onclick="calculate()" class="button1">
+    <button onclick="calculate()" class="button1" id="button1">
       <p id="a">Calculate</p>
     </button>
     <a href=""><button class="button2">
@@ -58,7 +58,7 @@
   <div class="footer">
     <p id="by">
       Handcrafted with <i class="fa fa-heart" aria-hidden="true"></i> by
-      <a href="https://mayurpai.github.io/" target="blank"><strong>Mayur Pai</strong></a>
+      <a href="https://mayurpai.github.io/portfolio/" target="blank"><strong>Mayur Pai</strong></a>
     </p>
     <p id="copy">
       Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020
@@ -95,6 +95,14 @@
         );
       }
     }
+
+    var input = document.getElementById("1");
+    input.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button1").click();
+      }
+    });
   </script>
 </body>
 

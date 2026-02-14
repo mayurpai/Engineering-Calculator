@@ -162,11 +162,12 @@ html {
 .container {
     position: fixed;
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     text-align: center;
-    /* background: url('images/bg.jpg');
-    background-size: cover; */
+    background: url('../images/Background.png');
+    background-size: cover;
 }
 
 .header {
@@ -178,22 +179,17 @@ html {
 }
 
 h1 {
-    /* font-family: 'Black Ops One', cursive; */
-    /* font-family: 'Major Mono Display', monospace; */
-    font-family: 'New Rocker', cursive;
-    color: rgb(17,17,17);
-    text-transform: uppercase;
-    /* letter-spacing: 0.5rem; */
-    /* text-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.); */
-    text-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.05),
-    1.5rem 2.5rem 15rem rgba(0, 0, 0, 0.05),
-    1.5rem 2rem 2rem rgba(0, 0, 0, 0.05),
-    inset -15rem -15rem 1.5rem rgba(255, 255, 255, 0.9);
+    font-family: 'Merriweather',
+        serif;
+    color: transparent;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: whitesmoke;
 }
+
 
 a {
     text-decoration: none;
-    color: rgb(17,17,17);
+    color: whitesmoke;
 }
 
 
@@ -211,20 +207,20 @@ ul {
 ul a {
     text-decoration: none;
     list-style: none;
-    color: rgb(17,17,17);
+    color: whitesmoke;
     margin: 2.5rem 1.5rem;
-    /* font-family: 'Black Ops One', cursive; */
-    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins',
+        sans-serif;
     font-size: 2.5rem;
     font-weight: bolder;
     transition: .1s all linear;
-    text-shadow: .5rem .5rem 0rem rgba(255, 255, 255, 0.1);
 }
 
 ul a:hover {
-    border-bottom: .1rem solid rgba(255, 255, 255, 0.1);
-    transform: scale(1.1);
-    text-shadow: none;
+    transition: .2s all linear;
+    color: transparent;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: whitesmoke;
 }
 
 .holder {
@@ -251,46 +247,94 @@ ul a:hover {
     width: 32rem;
     background-color: rgb(29, 29, 29);
     box-shadow: 2rem 2rem 0rem rgba(255, 255, 255, 0.1); */
-
+    background-color: rgba(0, 0, 0, 0.4);
     position: relative;
     width: 32rem;
     height: 32rem;
-    box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
-    2rem 2.5rem 15rem rgba(0, 0, 0, 0.15),
-    2rem 2rem 2rem rgba(0, 0, 0, 0.15),
-    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
+    box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.5),
+        /* 2rem 2.5rem 15rem rgba(0, 0, 0, 0.5), */
+        2rem 2rem 2rem rgba(0, 0, 0, 1),
+        inset 0rem 0rem 0.5rem rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .25s all linear;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0.1) 100%);
+    background-size: 800px 104px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeholderShimmer;
+    animation-name: placeholderShimmer;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    z-index: 999;
 }
 
-.sgpa::before,
+.sgpa a,
+.cgpa a,
+.cgpa2perc a {
+    height: 32rem;
+    width: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@-webkit-keyframes placeholderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+@keyframes placeholderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+/* .sgpa::before,
 .cgpa::before,
 .cgpa2perc::before {
     content: '';
     position: absolute;
     top: 6.5rem;
     left: 6.5rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-}
+    width: 10rem;
+    height: 5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%, 100% 50%, 0% 50%);
+    background: rgba(0, 0, 0, 0.2);
+} */
+
 
 .sgpa::after,
 .cgpa::after,
 .cgpa2perc::after {
     content: '';
     position: absolute;
-    top: 5rem;
-    left: 11.5rem;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    /* top: 14rem;
+    left: 1.5rem; */
+    width: 20rem;
+    height: 20rem;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+
 }
+
 
 /* #bubble {
     position: relative;
@@ -334,27 +378,21 @@ ul a:hover {
 .sgpa:hover,
 .cgpa:hover,
 .cgpa2perc:hover {
-    transform: scale(1.1);
-    box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
-    2.5rem 2.5rem 15rem rgba(0, 0, 0, 0.15),
-    2.5rem 2rem 2rem rgba(0, 0, 0, 0.15),
-    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
-}
-
-.cgpa a h6:hover,
-.sgpa a h6:hover,
-.cgpa2perc a h6:hover {
-    transition: 0.5s linear;
     transform: scale(1.05);
+    box-shadow: inset 1rem 1rem 15rem rgba(0, 0, 0, 0.5),
+        /* 2rem 2.5rem 15rem rgba(0, 0, 0, 0.5), */
+        0rem 0rem 1rem rgba(255, 255, 255, 0.2),
+        inset 0rem 0rem 1rem rgba(255, 255, 255, 0.2);
 }
 
 h6 {
-    /* font-family: 'Black Ops One', cursive; */
-    font-family: 'New Rocker', cursive;
-    font-size: 5rem;
-    font-weight: bolder;
+    font-family: 'Poppins',
+        sans-serif;
+    font-size: 4rem;
     transition: 1s all linear;
-    color: rgb(17,17,17);
+    color: transparent;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: whitesmoke;
     z-index: 5;
 }
 
@@ -367,12 +405,13 @@ h6 {
 }
 
 #copy {
-    color: rgb(17,17,17);
+    color: whitesmoke;
     position: absolute;
     background-color: transparent;
     text-align: center;
     letter-spacing: 0rem;
-    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins',
+        sans-serif;
     font-size: 1.5rem;
     margin-top: 2.5rem;
     left: 50%;
@@ -380,10 +419,11 @@ h6 {
 }
 
 #by {
-    color: rgb(17,17,17);
+    color: whitesmoke;
     position: absolute;
     background-color: transparent;
-    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins',
+        sans-serif;
     letter-spacing: 0;
     font-size: 1.5rem;
     margin-top: 2.5rem;
@@ -396,7 +436,7 @@ i {
 
 #fb {
     position: absolute;
-    color: rgb(17,17,17);
+    color: whitesmoke;
     margin-top: 2.5rem;
     margin-right: 5rem;
     font-size: 3rem;
@@ -405,20 +445,17 @@ i {
 
 #whatsapp {
     position: absolute;
-    color: rgb(17,17,17);
+    color: whitesmoke;
     margin-top: 2.5rem;
     margin-right: 5rem;
     font-size: 3rem;
     right: 18rem;
 }
 
-/* #whatsapp:hover {
-    color: #25D366;
-} */
 
 #git {
     position: absolute;
-    color: rgb(17,17,17);
+    color: whitesmoke;
     margin-top: 2.5rem;
     margin-right: 4rem;
     font-size: 3rem;
@@ -427,7 +464,7 @@ i {
 
 #twitter {
     position: absolute;
-    color: rgb(17,17,17);
+    color: whitesmoke;
     margin-top: 2.5rem;
     margin-right: 3rem;
     font-size: 3rem;
@@ -436,7 +473,7 @@ i {
 
 #insta {
     position: absolute;
-    color: rgb(17,17,17);
+    color: whitesmoke;
     margin-top: 2.5rem;
     margin-right: 2rem;
     font-size: 3rem;
@@ -445,14 +482,14 @@ i {
 
 #link {
     position: absolute;
-    color: rgb(17,17,17);
+    color: whitesmoke;
     margin-top: 2.5rem;
     margin-right: 1rem;
     font-size: 3rem;
     right: 1rem;
 }
 
-/* #fb:hover {
+#fb:hover {
     color: #1877f2;
 }
 
@@ -470,7 +507,11 @@ i {
 
 #insta:hover {
     color: #c32aa3;
-} */
+}
+
+#whatsapp:hover {
+    color: #25D366;
+}
 
 .videoback {
     position: fixed;

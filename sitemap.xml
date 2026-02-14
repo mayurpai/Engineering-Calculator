@@ -2,10 +2,16 @@
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://mayurpai.github.io</loc>
+    <loc>https://mayurpai.github.io/</loc>
   </url>
   <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/index.html</loc>
+    <loc>https://mayurpai.github.io/portfolio/</loc>
+  </url>
+  <url>
+    <loc>https://mayurpai.github.io/portfolio/Lafzon-Ka-Jadugar</loc>
+  </url>
+  <url>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/</loc>
   </url>
   <url>
     <loc>https://mayurpai.github.io/Engineering-Calculator/cgpa2perc.html</loc>

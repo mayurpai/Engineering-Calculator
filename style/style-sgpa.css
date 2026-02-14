@@ -165,8 +165,8 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
-  /* background: url('images/bg.jpg');
-    background-size: cover; */
+  background: url('../images/Background.png');
+  background-size: cover;
 }
 
 .header {
@@ -178,34 +178,32 @@ html {
 }
 
 h1 {
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
-  text-transform: uppercase;
-  /* letter-spacing: 0.5rem;
-  text-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.1); */
+  font-family: 'Merriweather',
+    serif;
+  color: transparent;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: whitesmoke;
 }
 
 h5 {
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
-  text-transform: uppercase;
-  /* letter-spacing: 0.5rem; */
+  font-family: 'Poppins',
+    sans-serif;
   text-shadow: 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.5rem;
 }
 
 h6 {
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
-  text-transform: uppercase;
-  /* letter-spacing: 0.5rem; */
-  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
-  font-size: 2.2rem;
+  font-family: 'Poppins',
+    sans-serif;
+  text-shadow: 0.25rem 0.25rem 0 rgba(255, 255, 255, 0.1);
+  color: whitesmoke;
+  font-size: 2.5rem;
 }
 
 a {
   text-decoration: none;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
 }
 
 nav {
@@ -222,20 +220,20 @@ ul {
 ul a {
   text-decoration: none;
   list-style: none;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin: 2.5rem 1.5rem;
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
+  font-family: 'Poppins',
+    sans-serif;
   font-size: 2.5rem;
   font-weight: bolder;
-  transition: 0.1s all linear;
-  text-shadow: 0.5rem 0.5rem 0rem rgba(255, 255, 255, 0.1);
+  transition: .1s all linear;
 }
 
 ul a:hover {
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
-  transform: scale(1.1);
-  text-shadow: none;
+  transition: .2s all linear;
+  color: transparent;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: whitesmoke;
 }
 
 .holder {
@@ -266,20 +264,72 @@ ul a:hover {
 .sixth,
 .seventh,
 .eighth {
+  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   width: 25rem;
   height: 25rem;
-  box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
-    2rem 2.5rem 15rem rgba(0, 0, 0, 0.15), 2rem 2rem 2rem rgba(0, 0, 0, 0.15),
-    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
+  box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.5),
+    /* 2rem 2.5rem 15rem rgba(0, 0, 0, 0.5), */
+    2rem 2rem 2rem rgba(0, 0, 0, 1),
+    inset 0rem 0rem 0.5rem rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.25s all linear;
+  transition: .25s all linear;
+  background: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0.1) 100%);
+  background-size: 800px 104px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  z-index: 999;
 }
 
-.sgpa::before,
+.sgpa a,
+.cgpa a,
+.all a,
+.forth a,
+.alls a,
+.sixth a,
+.seventh a,
+.eighth a {
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/* .sgpa::before,
 .cgpa::before,
 .all::before,
 .forth::before,
@@ -295,7 +345,7 @@ ul a:hover {
   height: 4rem;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
-}
+} */
 
 .sgpa::after,
 .cgpa::after,
@@ -305,14 +355,15 @@ ul a:hover {
 .sixth::after,
 .seventh::after,
 .eighth::after {
-  content: "";
+  content: '';
   position: absolute;
-  top: 5rem;
-  left: 11.5rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  /* top: 14rem;
+    left: 1.5rem; */
+  width: 15rem;
+  height: 15rem;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .sgpa:hover,
@@ -323,11 +374,11 @@ ul a:hover {
 .sixth:hover,
 .seventh:hover,
 .eighth:hover {
-  transform: scale(1.1);
-  box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
-    2.5rem 2.5rem 15rem rgba(0, 0, 0, 0.15),
-    2.5rem 2rem 2rem rgba(0, 0, 0, 0.15),
-    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+  box-shadow: inset 1rem 1rem 15rem rgba(0, 0, 0, 0.5),
+    /* 2rem 2.5rem 15rem rgba(0, 0, 0, 0.5), */
+    0rem 0rem 1rem rgba(255, 255, 255, 0.2),
+    inset 0rem 0rem 1rem rgba(255, 255, 255, 0.2);
 }
 
 /* .cgpa a h6:hover,
@@ -351,12 +402,13 @@ ul a:hover {
 }
 
 #copy {
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   position: absolute;
   background-color: transparent;
   text-align: center;
   letter-spacing: 0rem;
-  font-family: 'New Rocker', cursive;
+  font-family: 'Poppins',
+    sans-serif;
   font-size: 1.5rem;
   margin-top: 2.5rem;
   left: 50%;
@@ -364,10 +416,11 @@ ul a:hover {
 }
 
 #by {
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   position: absolute;
   background-color: transparent;
-  font-family: 'New Rocker', cursive;
+  font-family: 'Poppins',
+    sans-serif;
   letter-spacing: 0;
   font-size: 1.5rem;
   margin-top: 2.5rem;
@@ -380,7 +433,7 @@ i {
 
 #fb {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 5rem;
   font-size: 3rem;
@@ -389,20 +442,17 @@ i {
 
 #whatsapp {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 5rem;
   font-size: 3rem;
   right: 18rem;
 }
 
-/* #whatsapp:hover {
-    color: #25D366;
-} */
 
 #git {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 4rem;
   font-size: 3rem;
@@ -411,7 +461,7 @@ i {
 
 #twitter {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 3rem;
   font-size: 3rem;
@@ -420,7 +470,7 @@ i {
 
 #insta {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 2rem;
   font-size: 3rem;
@@ -429,32 +479,36 @@ i {
 
 #link {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 1rem;
   font-size: 3rem;
   right: 1rem;
 }
 
-/* #fb:hover {
-    color: #1877f2;
+#fb:hover {
+  color: #1877f2;
 }
 
 #git:hover {
-    color: #6e5494;
+  color: #6e5494;
 }
 
 #twitter:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 #link:hover {
-    color: #007bb5;
+  color: #007bb5;
 }
 
 #insta:hover {
-    color: #c32aa3;
-} */
+  color: #c32aa3;
+}
+
+#whatsapp:hover {
+  color: #25D366;
+}
 
 .videoback {
   position: fixed;

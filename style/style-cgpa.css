@@ -125,8 +125,8 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
-  /* background: url('images/bg.jpg');
-    background-size: cover; */
+  background: url('../images/Background.png');
+  background-size: cover;
 }
 
 .header {
@@ -138,17 +138,16 @@ html {
 }
 
 h1 {
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
-  text-transform: uppercase;
-  /* letter-spacing: 0.5rem;
-    text-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.1); */
+  font-family: 'Merriweather',
+    serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: whitesmoke;
 }
 
 a {
   text-decoration: none;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
 }
 
 nav {
@@ -165,20 +164,20 @@ ul {
 ul a {
   text-decoration: none;
   list-style: none;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin: 2.5rem 1.5rem;
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
+  font-family: 'Poppins',
+    sans-serif;
   font-size: 2.5rem;
   font-weight: bolder;
-  transition: 0.1s all linear;
-  text-shadow: 0.5rem 0.5rem 0rem rgba(255, 255, 255, 0.1);
+  transition: .1s all linear;
 }
 
 ul a:hover {
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
-  transform: scale(1.1);
-  text-shadow: none;
+  transition: .2s all linear;
+  color: transparent;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: whitesmoke;
 }
 
 .footer {
@@ -190,12 +189,13 @@ ul a:hover {
 }
 
 #copy {
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   position: absolute;
   background-color: transparent;
   text-align: center;
   letter-spacing: 0rem;
-  font-family: 'New Rocker', cursive;
+  font-family: 'Poppins',
+    sans-serif;
   font-size: 1.5rem;
   margin-top: 2.5rem;
   left: 50%;
@@ -203,10 +203,11 @@ ul a:hover {
 }
 
 #by {
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   position: absolute;
   background-color: transparent;
-  font-family: 'New Rocker', cursive;
+  font-family: 'Poppins',
+    sans-serif;
   letter-spacing: 0;
   font-size: 1.5rem;
   margin-top: 2.5rem;
@@ -219,7 +220,7 @@ i {
 
 #fb {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 5rem;
   font-size: 3rem;
@@ -228,20 +229,17 @@ i {
 
 #whatsapp {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 5rem;
   font-size: 3rem;
   right: 18rem;
 }
 
-/* #whatsapp:hover {
-    color: #25D366;
-} */
 
 #git {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 4rem;
   font-size: 3rem;
@@ -250,7 +248,7 @@ i {
 
 #twitter {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 3rem;
   font-size: 3rem;
@@ -259,7 +257,7 @@ i {
 
 #insta {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 2rem;
   font-size: 3rem;
@@ -268,32 +266,36 @@ i {
 
 #link {
   position: absolute;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   margin-top: 2.5rem;
   margin-right: 1rem;
   font-size: 3rem;
   right: 1rem;
 }
 
-/* #fb:hover {
-    color: #1877f2;
+#fb:hover {
+  color: #1877f2;
 }
 
 #git:hover {
-    color: #6e5494;
+  color: #6e5494;
 }
 
 #twitter:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 #link:hover {
-    color: #007bb5;
+  color: #007bb5;
 }
 
 #insta:hover {
-    color: #c32aa3;
-} */
+  color: #c32aa3;
+}
+
+#whatsapp:hover {
+  color: #25D366;
+}
 
 .videoback {
   position: fixed;
@@ -307,42 +309,19 @@ i {
   z-index: -100;
 }
 
-.button1 {
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
-  letter-spacing: 0.1rem;
-  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
-  text-align: center;
-  transition: 0.5s;
-  color: rgba(255, 255, 255, 0.1);
-  /* background-image: linear-gradient(to right, white 0%, grey 100%); */
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 4rem;
-  z-index: 2;
-  margin: 0 1rem;
-  padding: 0 1rem;
-  height: 5rem;
-  width: 18rem;
-}
-
 .button1:hover,
 .button2:hover {
-  background-position: right center;
-  transform: scale(1.05);
-  transition: linear 0.25s;
-  border: 0.25rem solid rgb(17, 17, 17);
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .button2 {
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
+  color: whitesmoke;
   letter-spacing: 0.1rem;
-  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
+  text-shadow: 0.25rem 0.25rem 0 rgba(255, 255, 255, 0.1);
   text-align: center;
   transition: 0.5s;
-  color: rgba(255, 255, 255, 0.1);
+  color: whitesmoke;
   /* background-image: linear-gradient(to right, white 0%, grey 100%); */
   background: rgba(255, 255, 255, 0.15);
   border-radius: 4rem;
@@ -351,45 +330,60 @@ i {
   padding: 0 1rem;
   height: 5rem;
   width: 18rem;
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 2rem;
+  border: none;
 }
 
-button p {
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
+.button1 {
+  color: whitesmoke;
   letter-spacing: 0.1rem;
-  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
+  text-shadow: 0.25rem 0.25rem 0 rgba(255, 255, 255, 0.1);
   text-align: center;
-  border-radius: 0.5rem;
-  justify-content: center;
+  transition: 0.5s;
+  color: whitesmoke;
+  /* background-image: linear-gradient(to right, white 0%, grey 100%); */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4rem;
+  z-index: 2;
+  margin: 0 1rem;
+  padding: 0 1rem;
+  height: 5rem;
+  width: 18rem;
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 2rem;
+  border: none;
 }
 
 input {
   border: none;
   background: transparent;
-  width: auto;
+  width: 40rem;
   display: block;
-  color: rgb(17, 17, 17);
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
+  color: whitesmoke;
+  font-family: 'Poppins',
+    sans-serif;
   padding: 0.3rem 0.3rem;
   text-align: center;
   transition: all 0.1s linear;
+  border-bottom: 0.1rem solid black;
+  margin: .1rem 0;
 }
 
 .sem input {
   font-size: 2rem;
-  width: 10rem;
+  width: 8rem;
 }
 
 input:focus,
 input:active,
 select:focus {
-  border-color: transparent;
-  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.1);
-  box-shadow: 1rem 0rem 0rem rgba(255, 255, 255, 0.15);
+  box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.5),
+  inset 0rem 0rem 0.5rem rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
   outline: none;
 }
 
@@ -410,11 +404,12 @@ label {
   height: auto;
   width: auto;
   /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
+  font-family: 'Poppins',
+    sans-serif;
+  color: whitesmoke;
   letter-spacing: 0.1rem;
-  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
-  padding: 0.5rem 1rem;
+  text-shadow: 0.25rem 0.25rem 0 rgba(255, 255, 255, 0.1);
+  padding: 0rem 1rem;
   font-size: 3rem;
 }
 
@@ -422,37 +417,71 @@ label {
   position: fixed;
   display: flex;
   justify-content: center;
-  top: 60rem;
+  top: 58rem;
   overflow: hidden;
 }
 
 #cgpa,
 #perc {
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
+  font-family: 'Poppins',
+    sans-serif;
+  color: whitesmoke;
   letter-spacing: 0.1rem;
-  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
+  text-shadow: 0.25rem 0.25rem 0 rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1rem;
   font-size: 2.5rem;
   text-align: center;
   border-radius: 0.5rem;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.12) 20%, rgba(255, 255, 255, 0.02) 40%, rgba(255, 255, 255, 0.1) 100%);
+  background-size: 800px 104px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
 }
 
 .cal {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  top: 64rem;
+  top: 62rem;
   margin: 2rem;
   overflow: hidden;
 }
 
 .result input {
-  border: 0.25rem solid rgb(17, 17, 17);
-  background: transparent;
+  box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.5),
+    inset 0rem 0rem 0.5rem rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
   display: block;
   font-weight: bold;
   padding: 0.3rem 0.3rem;
@@ -470,16 +499,15 @@ input::-webkit-input-placeholder {
   place-items: center;
   text-align: center;
   justify-content: center;
-  top: 57rem;
+  top: 55rem;
 }
 
 .note p {
-  /* font-family: 'Black Ops One', cursive; */
-  font-family: "New Rocker", cursive;
-  color: rgb(17, 17, 17);
+  font-family: 'Poppins',
+    sans-serif;
+  color: whitesmoke;
   letter-spacing: 0.1rem;
-  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
