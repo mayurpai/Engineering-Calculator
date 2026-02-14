@@ -1,0 +1,469 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 65%;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .holder {
+    height: 40rem;
+    width: 150rem;
+  }
+
+  .footer {
+    top: 69.3rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 60%;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .holder {
+    height: 60rem;
+    width: 120rem;
+  }
+
+  .footer {
+    top: 69.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 32%;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .holder {
+    height: 60rem;
+    width: 120rem;
+  }
+
+  .footer {
+    top: 73rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 34%;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .holder {
+    height: 90rem;
+    width: 95rem;
+  }
+
+  .footer {
+    top: 127rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 27%;
+  }
+
+  h1 {
+    font-size: 5.25rem;
+  }
+
+  .holder {
+    height: 90rem;
+    width: 95rem;
+  }
+
+  .footer {
+    top: 122rem;
+  }
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 24.5%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .holder {
+    height: 90rem;
+    width: 90rem;
+  }
+
+  .footer {
+    top: 122rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 22.5%;
+  }
+
+  h1 {
+    font-size: 4.75rem;
+  }
+
+  .holder {
+    height: 90rem;
+    width: 85rem;
+  }
+}
+
+@media (max-width: 280px) {
+  html {
+    font-size: 20.5%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .holder {
+    height: 90rem;
+    width: 85rem;
+  }
+}
+
+.container {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* background: url('images/bg.jpg');
+    background-size: cover; */
+}
+
+.header {
+  position: fixed;
+  margin-top: 6rem;
+  height: max-content;
+  width: max-content;
+  background-color: transparent;
+}
+
+h1 {
+  font-family: "New Rocker", cursive;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  /* letter-spacing: 0.5rem;
+  text-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.1); */
+}
+
+h5 {
+  font-family: "New Rocker", cursive;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  /* letter-spacing: 0.5rem; */
+  text-shadow: 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-family: "New Rocker", cursive;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  /* letter-spacing: 0.5rem; */
+  text-shadow: 0.5rem 0.5rem 0 rgba(255, 255, 255, 0.1);
+  font-size: 2.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 7.5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(17, 17, 17);
+  margin: 2.5rem 1.5rem;
+  /* font-family: 'Black Ops One', cursive; */
+  font-family: "New Rocker", cursive;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  transition: 0.1s all linear;
+  text-shadow: 0.5rem 0.5rem 0rem rgba(255, 255, 255, 0.1);
+}
+
+ul a:hover {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+  text-shadow: none;
+}
+
+.holder {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 13rem;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+}
+
+/* @keyframes loop {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+.sgpa,
+.cgpa,
+.all,
+.forth,
+.alls,
+.sixth,
+.seventh,
+.eighth {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
+    2rem 2.5rem 15rem rgba(0, 0, 0, 0.15), 2rem 2rem 2rem rgba(0, 0, 0, 0.15),
+    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s all linear;
+}
+
+.sgpa::before,
+.cgpa::before,
+.all::before,
+.forth::before,
+.alls::before,
+.sixth::before,
+.seventh::before,
+.eighth::before {
+  content: "";
+  position: absolute;
+  top: 6.5rem;
+  left: 6.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sgpa::after,
+.cgpa::after,
+.all::after,
+.forth::after,
+.alls::after,
+.sixth::after,
+.seventh::after,
+.eighth::after {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: 11.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sgpa:hover,
+.cgpa:hover,
+.all:hover,
+.forth:hover,
+.alls:hover,
+.sixth:hover,
+.seventh:hover,
+.eighth:hover {
+  transform: scale(1.1);
+  box-shadow: inset 15rem 15rem 15rem rgba(0, 0, 0, 0.15),
+    2.5rem 2.5rem 15rem rgba(0, 0, 0, 0.15),
+    2.5rem 2rem 2rem rgba(0, 0, 0, 0.15),
+    inset 0rem 0rem 1.5rem rgba(255, 255, 255, 0.9);
+}
+
+/* .cgpa a h6:hover,
+.all a h6:hover,
+.forth a h6:hover,
+.sgpa a h6:hover,
+.alls a h6:hover,
+.sixth a h6:hover,
+.seventh a h6:hover,
+.eighth a h6:hover {
+  transition: 0.5s linear;
+  transform: scale(1.05);
+} */
+
+.footer {
+  position: fixed;
+  margin-bottom: 2.5rem;
+  height: 7rem;
+  width: 100vw;
+  background-color: transparent;
+}
+
+#copy {
+  color: rgb(17, 17, 17);
+  position: absolute;
+  background-color: transparent;
+  text-align: center;
+  letter-spacing: 0rem;
+  font-family: 'New Rocker', cursive;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#by {
+  color: rgb(17, 17, 17);
+  position: absolute;
+  background-color: transparent;
+  font-family: 'New Rocker', cursive;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  left: 3rem;
+}
+
+i {
+  background: transparent;
+}
+
+#fb {
+  position: absolute;
+  color: rgb(17, 17, 17);
+  margin-top: 2.5rem;
+  margin-right: 5rem;
+  font-size: 3rem;
+  right: 15rem;
+}
+
+#whatsapp {
+  position: absolute;
+  color: rgb(17, 17, 17);
+  margin-top: 2.5rem;
+  margin-right: 5rem;
+  font-size: 3rem;
+  right: 18rem;
+}
+
+/* #whatsapp:hover {
+    color: #25D366;
+} */
+
+#git {
+  position: absolute;
+  color: rgb(17, 17, 17);
+  margin-top: 2.5rem;
+  margin-right: 4rem;
+  font-size: 3rem;
+  right: 11.5rem;
+}
+
+#twitter {
+  position: absolute;
+  color: rgb(17, 17, 17);
+  margin-top: 2.5rem;
+  margin-right: 3rem;
+  font-size: 3rem;
+  right: 8rem;
+}
+
+#insta {
+  position: absolute;
+  color: rgb(17, 17, 17);
+  margin-top: 2.5rem;
+  margin-right: 2rem;
+  font-size: 3rem;
+  right: 4.5rem;
+}
+
+#link {
+  position: absolute;
+  color: rgb(17, 17, 17);
+  margin-top: 2.5rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+  right: 1rem;
+}
+
+/* #fb:hover {
+    color: #1877f2;
+}
+
+#git:hover {
+    color: #6e5494;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#link:hover {
+    color: #007bb5;
+}
+
+#insta:hover {
+    color: #c32aa3;
+} */
+
+.videoback {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -100;
+}
