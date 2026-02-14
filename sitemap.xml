@@ -1,50 +1,156 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Root -->
   <url>
     <loc>https://mayurpai.github.io/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
+
+  <!-- Portfolio -->
   <url>
     <loc>https://mayurpai.github.io/portfolio/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://mayurpai.github.io/portfolio/Lafzon-Ka-Jadugar</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Engineering Calculator -->
   <url>
     <loc>https://mayurpai.github.io/Engineering-Calculator/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/cgpa2perc.html</loc>
-  </url>
-  <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/cgpa.html</loc>
-  </url>
+
   <url>
     <loc>https://mayurpai.github.io/Engineering-Calculator/sgpa.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/eighthSemester.html</loc>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/cgpa.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/seventhSemester.html</loc>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/cgpa2perc.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/sixthSemester.html</loc>
-  </url>
-  <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/fifthSemester.html</loc>
-  </url>
-  <url>
-    <loc>https://mayurpai.github.io/Engineering-Calculator/forthSemester.html</loc>
-  </url>
+
+  <!-- Semester Pages -->
   <url>
     <loc>https://mayurpai.github.io/Engineering-Calculator/thirdSemester.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/forthSemester.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/fifthSemester.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/sixthSemester.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/seventhSemester.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/Engineering-Calculator/eighthSemester.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <url>
     <loc>https://mayurpai.github.io/Engineering-Calculator/chemCycle.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://mayurpai.github.io/Engineering-Calculator/phyCycle.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
+
+  <!-- TuPhodega -->
+  <url>
+    <loc>https://mayurpai.github.io/TuPhodega/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/TuPhodega/Civil/civil.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/TuPhodega/Electronics/electro.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/TuPhodega/Mechanical/mechanical.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/TuPhodega/InformationScience/infoScience.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://mayurpai.github.io/TuPhodega/ComputerScience/compScience.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
