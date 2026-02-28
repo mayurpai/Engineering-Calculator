@@ -46,24 +46,32 @@ export default function Navbar() {
         return;
       }
 
-      const hideThreshold = calculatorsSection.offsetTop - 120;
-      setIsHidden(window.scrollY >= hideThreshold);
+      const sectionTop = calculatorsSection.getBoundingClientRect().top;
+      const hideThreshold = window.innerWidth < 640 ? 84 : 120;
+      const shouldHide = sectionTop <= hideThreshold;
+      setIsHidden(shouldHide);
+
+      if (shouldHide) {
+        setIsOpen(false);
+      }
     };
 
     updateVisibility();
     window.addEventListener('scroll', updateVisibility, { passive: true });
     window.addEventListener('resize', updateVisibility);
+    window.addEventListener('orientationchange', updateVisibility);
 
     return () => {
       window.removeEventListener('scroll', updateVisibility);
       window.removeEventListener('resize', updateVisibility);
+      window.removeEventListener('orientationchange', updateVisibility);
     };
   }, []);
 
   const linkBaseClass =
     'relative transition-all duration-300 ui-interactive after:content-["\"] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-gradient-to-r after:from-blue-400 after:to-purple-400 after:transition-transform after:duration-300 hover:after:scale-x-100 hover:-translate-y-0.5';
-  const navTextClass = 'text-slate-100 hover:text-white font-extrabold tracking-wide';
-  const calculatorsHeadingClass = 'text-slate-100 hover:text-white !font-black tracking-wider text-base';
+  const navTextClass = 'text-slate-100 hover:text-white font-extrabold tracking-wide text-sm sm:text-base';
+  const calculatorsHeadingClass = 'text-slate-100 hover:text-white !font-black tracking-wider text-sm sm:text-base';
   const dropdownLinkClass = 'block rounded-lg px-4 py-2.5 text-left text-sm font-bold text-slate-200 hover:text-white hover:bg-white/10 transition';
 
   const openDropdown = () => {
@@ -83,12 +91,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 px-4 sm:px-6 lg:px-8 pt-3 transition-all duration-300 ${
+      className={`sticky top-0 z-50 px-2.5 sm:px-6 lg:px-8 pt-2.5 sm:pt-3 transition-all duration-300 ${
         isHidden ? 'opacity-0 -translate-y-3 pointer-events-none' : 'opacity-100 translate-y-0'
       }`}
     >
       <div className="max-w-7xl mx-auto ui-card shadow-2xl drop-shadow-2xl px-4 sm:px-6">
-        <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 py-3 sm:py-4 text-center">
+        <div className="flex flex-wrap justify-center items-center gap-x-4 sm:gap-x-8 gap-y-2.5 sm:gap-y-3 py-2.5 sm:py-4 text-center">
           <Link href="/" className={`${linkBaseClass} ${navTextClass}`}>Home</Link>
 
           <div
