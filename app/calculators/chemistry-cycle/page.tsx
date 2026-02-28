@@ -457,14 +457,14 @@ export default function SGPACalculator() {
             </button>
 
             {sgpa !== null && (
-              <div ref={resultSectionRef} className="mt-8 p-6 bg-gradient-to-r from-orange-500/15 to-amber-500/15 rounded-lg border border-orange-300/35 ui-reveal ui-delay-1">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
-                <p className="text-slate-300 mb-2">Your SGPA</p>
-                <p className="text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-amber-300 ui-number">
+              <div ref={resultSectionRef} className="ui-result-card mt-8 p-6 bg-gradient-to-r from-orange-500/15 to-amber-500/15 rounded-lg border border-orange-300/35 ui-reveal ui-delay-1">
+                <h3 className="ui-result-title text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
+                <p className="ui-result-label text-slate-300 mb-2">Your SGPA</p>
+                <p className="ui-result-value text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-amber-300 ui-number">
                   {animatedSGPA.toFixed(2)}
                 </p>
-                <p className="text-slate-300 mt-6 mb-2">Converted Percentage ({percentageSchemeLabel})</p>
-                <p className="text-3xl sm:text-4xl md:text-5xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-300 ui-number">
+                <p className="ui-result-label text-slate-300 mt-6 mb-2">Converted Percentage ({percentageSchemeLabel})</p>
+                <p className="ui-result-subvalue text-3xl sm:text-4xl md:text-5xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-300 ui-number">
                   {animatedPercentage.toFixed(2)}%
                 </p>
               </div>

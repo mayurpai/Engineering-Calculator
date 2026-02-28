@@ -385,9 +385,26 @@ export default function CGPACalculator() {
                       <button
                         onClick={() => removeSemester(semester.id)}
                         disabled={isResetting || removingSemesterId !== null}
-                        className="px-4 py-2 bg-red-500/90 text-white rounded-lg hover:bg-red-500 transition ui-interactive disabled:opacity-60 disabled:cursor-not-allowed"
+                        aria-label={`Remove ${semester.name}`}
+                        title="Remove Semester"
+                        className="h-9 w-9 inline-flex items-center justify-center bg-red-500/90 text-white rounded-lg hover:bg-red-500 transition ui-interactive disabled:opacity-60 disabled:cursor-not-allowed"
                       >
-                        Remove Semester
+                        <svg
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          className="h-4 w-4"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M3 6h18" />
+                          <path d="M8 6V4h8v2" />
+                          <path d="M19 6l-1 14H6L5 6" />
+                          <path d="M10 11v6" />
+                          <path d="M14 11v6" />
+                        </svg>
                       </button>
                     )}
                   </div>
@@ -452,18 +469,18 @@ export default function CGPACalculator() {
             </button>
 
             {cgpa !== null && (
-              <div ref={resultSectionRef} className="mt-8 p-6 bg-gradient-to-r from-blue-500/15 to-purple-500/15 rounded-lg border border-blue-300/35 ui-reveal ui-delay-1">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
-                <p className="text-slate-300 mb-2">Your CGPA</p>
-                <p className="text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 ui-number">
+              <div ref={resultSectionRef} className="ui-result-card mt-8 p-6 bg-gradient-to-r from-blue-500/15 to-purple-500/15 rounded-lg border border-blue-300/35 ui-reveal ui-delay-1">
+                <h3 className="ui-result-title text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
+                <p className="ui-result-label text-slate-300 mb-2">Your CGPA</p>
+                <p className="ui-result-value text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 ui-number">
                   {animatedCGPA.toFixed(2)}
                 </p>
 
                 <div className="border-t border-blue-300/35 pt-6 mt-6">
-                  <p className="text-slate-300 mb-2">
+                  <p className="ui-result-label text-slate-300 mb-2">
                     Converted Percentage ({percentageScheme === '2018' ? '2018 Scheme' : '2021/2022 Scheme'})
                   </p>
-                  <p className="text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 ui-number">
+                  <p className="ui-result-subvalue text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 ui-number">
                     {animatedPercentage.toFixed(2)}%
                   </p>
                 </div>

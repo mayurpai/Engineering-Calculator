@@ -245,14 +245,14 @@ export default function CGPAToPercentage() {
             {/* Result Section */}
             {percentage !== null && (
               <div ref={resultSectionRef} className="space-y-6">
-                <div className="p-6 bg-gradient-to-r from-pink-500/15 to-rose-500/15 rounded-lg border border-pink-300/35 ui-reveal ui-delay-1">
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
-                  <p className="text-slate-300 mb-2">Your CGPA</p>
-                  <p className="text-3xl sm:text-4xl md:text-6xl !font-black text-pink-300 mb-6 ui-number">{cgpa}</p>
+                <div className="ui-result-card p-6 bg-gradient-to-r from-pink-500/15 to-rose-500/15 rounded-lg border border-pink-300/35 ui-reveal ui-delay-1">
+                  <h3 className="ui-result-title text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
+                  <p className="ui-result-label text-slate-300 mb-2">Your CGPA</p>
+                  <p className="ui-result-value text-3xl sm:text-4xl md:text-6xl !font-black text-pink-300 mb-6 ui-number">{cgpa}</p>
 
                     <div className="border-t border-pink-300/35 pt-6">
-                    <p className="text-slate-300 mb-2">Converted Percentage ({method === 'scheme2018' ? '2018 Scheme' : '2021/2022 Scheme'})</p>
-                    <p className="text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-rose-300 ui-number">
+                    <p className="ui-result-label text-slate-300 mb-2">Converted Percentage ({method === 'scheme2018' ? '2018 Scheme' : '2021/2022 Scheme'})</p>
+                    <p className="ui-result-subvalue text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-rose-300 ui-number">
                       {animatedPercentage.toFixed(2)}%
                     </p>
                   </div>

@@ -444,9 +444,26 @@ export default function SGPACalculator() {
                           <button
                             onClick={() => removeSubject(subject.id)}
                             disabled={isResetting || removingSubjectId !== null}
-                            className="px-4 py-2 bg-red-500/90 text-white rounded-lg hover:bg-red-500 transition ui-interactive disabled:opacity-60 disabled:cursor-not-allowed"
+                            aria-label={`Remove Subject ${index + 1}`}
+                            title="Remove Subject"
+                            className="h-9 w-9 inline-flex items-center justify-center bg-red-500/90 text-white rounded-lg hover:bg-red-500 transition ui-interactive disabled:opacity-60 disabled:cursor-not-allowed"
                           >
-                            Remove Subject
+                            <svg
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              className="h-4 w-4"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M3 6h18" />
+                              <path d="M8 6V4h8v2" />
+                              <path d="M19 6l-1 14H6L5 6" />
+                              <path d="M10 11v6" />
+                              <path d="M14 11v6" />
+                            </svg>
                           </button>
                         )}
                       </div>
@@ -535,14 +552,14 @@ export default function SGPACalculator() {
             </button>
 
             {sgpa !== null && (
-              <div ref={resultSectionRef} className="mt-8 p-6 bg-gradient-to-r from-purple-500/15 to-pink-500/15 rounded-lg border border-purple-300/35 ui-reveal ui-delay-1">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
-                <p className="text-slate-300 mb-2">Your SGPA</p>
-                <p className="text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300 ui-number">
+              <div ref={resultSectionRef} className="ui-result-card mt-8 p-6 bg-gradient-to-r from-purple-500/15 to-pink-500/15 rounded-lg border border-purple-300/35 ui-reveal ui-delay-1">
+                <h3 className="ui-result-title text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4">CALCULATED RESULT</h3>
+                <p className="ui-result-label text-slate-300 mb-2">Your SGPA</p>
+                <p className="ui-result-value text-4xl sm:text-5xl md:text-6xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300 ui-number">
                   {animatedSGPA.toFixed(2)}
                 </p>
-                <p className="text-slate-300 mt-6 mb-2">Converted Percentage ({percentageSchemeLabel})</p>
-                <p className="text-3xl sm:text-4xl md:text-5xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300 ui-number">
+                <p className="ui-result-label text-slate-300 mt-6 mb-2">Converted Percentage ({percentageSchemeLabel})</p>
+                <p className="ui-result-subvalue text-3xl sm:text-4xl md:text-5xl !font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300 ui-number">
                   {animatedPercentage.toFixed(2)}%
                 </p>
               </div>
