@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Mayur Pai" }],
   creator: "Mayur Pai",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/Engineering-Calculator/favicon.svg",
+    shortcut: "/Engineering-Calculator/favicon.svg",
+    apple: "/Engineering-Calculator/favicon.svg",
   },
 };
 
