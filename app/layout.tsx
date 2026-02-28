@@ -27,7 +27,12 @@ export const metadata: Metadata = {
   keywords:
     "HTML,CSS, JavaScript, Engineering, Engineering-Calculator, SGPA, CGPA, SGPA Calculator, CGPA Calculator, VTU sgpa calculator, VTU cgpa calculator, Engineering sgpa calculator, Engineering cgpa calculator, React.js, Next.js, Software Engineer II, Nike, Full Stack Engineer, Generative AI, Platform Engineering, Cloud Engineering, React.js, Next.js, JavaScript, TypeScript, Python, FastAPI, Kubernetes, Distributed Systems, Engineering Portfolio",
   authors: [{ name: "Mayur Pai" }],
-  creator: "Mayur Pai"
+  creator: "Mayur Pai",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
