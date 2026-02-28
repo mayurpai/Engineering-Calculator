@@ -16,7 +16,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const metadataBase = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL || "https://mayurpai.github.io/Engineering-Calculator"
+);
+
 export const metadata: Metadata = {
+  metadataBase,
   title: "Engineering Calculator",
   description: "Engineering Calculator is the essential academic companion for students, simplifying SGPA, CGPA, and CGPA-to-percentage calculations with precision. Designed for accuracy and ease of use, it helps students quickly convert and track their academic performance without complexity.",
   keywords:
@@ -24,9 +29,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Mayur Pai" }],
   creator: "Mayur Pai",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "favicon.svg",
+    shortcut: "favicon.svg",
+    apple: "favicon.svg",
   },
 };
 
