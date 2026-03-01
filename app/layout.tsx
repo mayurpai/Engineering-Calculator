@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     shortcut: "/Engineering-Calculator/favicon.svg",
     apple: "/Engineering-Calculator/favicon.svg",
   },
+  other: {
+    "google-adsense-account": "ca-pub-9607816643609771",
+  },
 };
 
 export default function RootLayout({
